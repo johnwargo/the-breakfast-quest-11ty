@@ -9,10 +9,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnwargo/thebreakfastquest"
+    "url": "git+https://github.com/johnwargo/the-breakfast-quest"
   },
   "bugs": {
-    "url": "https://github.com/johnwargo/thebreakfastquest/issues"
+    "url": "https://github.com/johnwargo/the-breakfast-quest/issues"
   },
   "main": "index.js",
   "type": "module",
