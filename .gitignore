@@ -1,8 +1,9 @@
 # Folders
-.cache/
 _site/
 node_modules/
+px-slate-html/
 
 # Files
 .DS_Store
 link-checker-results.*
+px-slate-html.zip
