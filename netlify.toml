@@ -1,0 +1,8 @@
+[build.environment]
+  TZ = "America/New_York"
+
+[[plugins]]
+package = "netlify-plugin-cache"
+  [plugins.inputs]
+  # Optional (but highly recommended). Defaults to [".cache"].
+  paths = [".cache"]
