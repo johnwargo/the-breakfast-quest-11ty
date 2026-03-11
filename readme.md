@@ -22,6 +22,7 @@ What does this site need?
 
 ## Tasks
 
+- [ ] processed images in subfolder
 - [ ] Search
 - [ ] Application icon
 - [ ] 
