@@ -22,6 +22,7 @@ What does this site need?
 
 ## Tasks
 
+- [ ] Set production flag in netlify
 - [ ] processed images in subfolder
 - [ ] Search
 - [ ] Application icon
