@@ -1,10 +1,8 @@
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 import pluginDate from 'eleventy-plugin-date';
 import pluginRss from '@11ty/eleventy-plugin-rss';
-
 // My plugins
 import generateCategoryPages from 'eleventy-generate-category-pages';
-
 // local plugins
 import pluginGallery from "./eleventy.config.gallery.js";
 import pluginImageHeaders from './eleventy.config.headerimage.js';
@@ -39,6 +37,21 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginImageHeaders, {
 		dataFileName: categoryDataFile,
 		imageClass: 'image fit'
+	});
+
+		eleventyConfig.addFilter('readableTimestamp', function (dateVal, locale = 'en-us') {
+		// Used by home, articles, & post pages to render timestamp as human readable
+		var theDate = new Date(dateVal);
+		const options = {
+			weekday: 'long',
+			year: 'numeric',
+			month: 'long',
+			day: 'numeric',
+			hour12: true,
+			hour: '2-digit',
+			minute: '2-digit'
+		};
+		return theDate.toLocaleString(locale, options);
 	});
 
 	var firstRun = true;
