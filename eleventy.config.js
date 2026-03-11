@@ -8,6 +8,8 @@ import generateCategoryPages from 'eleventy-generate-category-pages';
 // local plugins
 import pluginGallery from "./eleventy.config.gallery.js";
 import pluginImageHeaders from './eleventy.config.headerimage.js';
+// transforms
+import htmlMinTransform from './src/transforms/html-min.js';
 
 const isProduction = process.env.NODE_ENV === 'production';
 const categoryDataFile = 'categoryData.json';
@@ -56,10 +58,13 @@ export default async function (eleventyConfig) {
 	[
 		'src/_data/*',
 		'src/assets/',
-		'src/images/'
+		// 'src/images/'
 	].forEach((path) => {
 		eleventyConfig.addPassthroughCopy(path);
 	});
+
+	// Only minify HTML if we are in production
+	if (isProduction) eleventyConfig.addTransform('htmlmin', htmlMinTransform);
 
 	return {
 		dir: {
