@@ -1,0 +1,4 @@
+Sitemap: https://thebreakfastquest.com/sitemap.xml
+
+User-agent: *
+Disallow:
