@@ -9,16 +9,15 @@ Source code for the thebreakfastquest.com web site.
 
 Netlify project: [https://breakfastquest.netlify.app/](https://breakfastquest.netlify.app/).
 
+## Map
 
-What does this site need?
+With Google Maps, you can feed it a data file with latitude and longitude values as well as a location name, pictures, etc.
+Recommend adding long and lat values to post front matter and generating the file during the build process. 
+Map page loads the data file from the server and passes it to the Google Maps API.
 
-+ Restaurant Listings
-+ Blog posts?
-+ News?
-+ Recipes (from the restaurants)?
-+ Map view
-+ Calendar view?
+https://www.latlong.net/convert-address-to-lat-long.html
 
+Or make a Visual Studio plugin that does it. 
 
 ## Tasks
 
@@ -26,6 +25,7 @@ What does this site need?
 - [ ] Home page content/layout
 - [ ] Hero - multiple breakfast locations
 - [ ] Map page listing all locations on a, you know, map.
+- [ ] put address on post? Then build locations file from post data?
 - [ ] Post page, display map to the location
 - [ ] Algolia index
 - [ ] Search
@@ -39,3 +39,10 @@ What does this site need?
 - [ ] 
 - [ ] 
 - [ ] 
+
+## Thinking List
+
+- [ ] Calendar view? Could be fun.
+- [ ] Menus
+- [ ] News
+- [ ] Recipes?  Perhaps from the restaurants?
