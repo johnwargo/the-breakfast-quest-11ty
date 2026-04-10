@@ -11,7 +11,6 @@ import logger from 'cli-logger';
 
 const APP_NAME = 'Eleventy-Plugin-Generate-Location-Data';
 const durationStr = `[${APP_NAME}] Duration`;
-const oneDayMilliseconds = 1000 * 60 * 60 * 24;
 
 // configure the logger
 var conf = { console: true, level: logger.INFO };
@@ -42,7 +41,6 @@ export default function (eleventyConfig, options = {}) {
     var locations = [];
 
     console.time(durationStr);
-
     // Process each tag separately since getFilteredByTag looks for
     // posts with all of the tags, not just the one we want
     for (let tag of tags) {
@@ -55,7 +53,6 @@ export default function (eleventyConfig, options = {}) {
     if (posts.length > 0) {
       // we have posts
       log.info(`Located ${posts.length} posts with location data`);
-
       // loop through the posts, adding the location data to the locations array
       for (let post of posts) {
         if (post.data.isLocation) {
