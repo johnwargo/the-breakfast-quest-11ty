@@ -6,6 +6,7 @@ import pluginRss from '@11ty/eleventy-plugin-rss';
 import generateCategoryPages from 'eleventy-generate-category-pages';
 // local plugins
 import pluginGallery from "./site.gallery.js";
+import pluginLocations from './site.locations.js';
 import pluginImageHeaders from './site.headerimage.js';
 // transforms
 import htmlMinTransform from './src/transforms/html-min.js';
@@ -65,7 +66,8 @@ export default async function (eleventyConfig) {
 				imageProperties: true,
 				quitOnError: true,
 				debugMode: false
-			});
+			})
+			pluginLocations(eleventyConfig, { outputFile: './src/_data/locations.json', debugMode: true });
 		}
 	});
 
