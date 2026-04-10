@@ -41,6 +41,8 @@ export default function (eleventyConfig, options = {}) {
     var posts = [];
     var locations = [];
 
+    console.time(durationStr);
+
     // Process each tag separately since getFilteredByTag looks for
     // posts with all of the tags, not just the one we want
     for (let tag of tags) {
@@ -49,19 +51,25 @@ export default function (eleventyConfig, options = {}) {
       log.info(`Located ${tagPosts.length} "${tag}" articles`);
       posts.push(...tagPosts);
     }
-    const postCount = posts.length;
-    if (postCount < 1) {
+    log.info('Processing posts for location data');
+    if (posts.length > 0) {
       // we have posts
-      log.info(`Located ${postCount} posts with location data`);
+      log.info(`Located ${posts.length} posts with location data`);
 
       // loop through the posts, adding the location data to the locations array
-
-
-
+      for (let post of posts) {
+        if (post.data.isLocation) {
+          let locRecord = {
+            name: post.data.title,
+            latitude: post.data.latitude,
+            longitude: post.data.longitude
+          }
+          locations.push(locRecord);
+        }
+      }
     } else {
       log.info(`No locations found in tag(s): ${tags.join(', ')}`);
     }
-
     if (debugMode) {
       console.dir(locations);
     }

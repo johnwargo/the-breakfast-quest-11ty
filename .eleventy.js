@@ -67,7 +67,7 @@ export default async function (eleventyConfig) {
 				quitOnError: true,
 				debugMode: false
 			})
-			pluginLocations(eleventyConfig, { outputFile: './src/_data/locations.json', debugMode: true });
+			pluginLocations(eleventyConfig, { outputFile: './src/_data/locations.json', debugMode: false });
 		}
 	});
 
