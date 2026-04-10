@@ -5,8 +5,8 @@ import pluginRss from '@11ty/eleventy-plugin-rss';
 // My plugins
 import generateCategoryPages from 'eleventy-generate-category-pages';
 // local plugins
-import pluginGallery from "./eleventy.config.gallery.js";
-import pluginImageHeaders from './eleventy.config.headerimage.js';
+import pluginGallery from "./11ty.gallery.js";
+import pluginImageHeaders from './11ty.headerimage.js';
 // transforms
 import htmlMinTransform from './src/transforms/html-min.js';
 
@@ -56,18 +56,18 @@ export default async function (eleventyConfig) {
 		return theDate.toLocaleString(locale, options);
 	});
 
-	// var firstRun = true;
-	// eleventyConfig.on('eleventy.before', async ({ dir, runMode, outputMode }) => {
-	// 	if (firstRun) {
-	// 		firstRun = false;
-	// 		generateCategoryPages({
-	// 			dataFileName: categoryDataFile,
-	// 			imageProperties: true,
-	// 			quitOnError: true,
-	// 			debugMode: false
-	// 		});
-	// 	}
-	// });
+	var firstRun = true;
+	eleventyConfig.on('eleventy.before', async ({ dir, runMode, outputMode }) => {
+		if (firstRun) {
+			firstRun = false;
+			generateCategoryPages({
+				dataFileName: categoryDataFile,
+				imageProperties: true,
+				quitOnError: true,
+				debugMode: false
+			});
+		}
+	});
 
 	eleventyConfig.addPassthroughCopy({ 'src/favicon/*': '/' });
 	[
