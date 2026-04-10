@@ -1,24 +1,20 @@
+{% assign navPages = collections.all | eleventyNavigation %}
+
 <nav id="nav">
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li>
-      <a href="#" class="submenu fa-angle-down">Page Layouts</a>
+    {%- for entry in navPages %}
+    <li {%- if entry.url==page.url %} class="current"{%- endif %}>
+      <a href="{{ entry.url }}" {%- if entry.children.length > 0 %} class="icon solid fa-angle-down"{%- endif %} >{{ entry.title }}</a>
+      {%- if entry.children.length > 0 %}
       <ul>
-        <li><a href="left-sidebar.html">Left Sidebar</a></li>
-        <li><a href="right-sidebar.html">Right Sidebar</a></li>
-        <li><a href="no-sidebar.html">No Sidebar</a></li>
+        {%- for child in entry.children %}
         <li>
-          <a href="#">Submenu</a>
-          <ul>
-            <li><a href="#">Option One</a></li>
-            <li><a href="#">Option Two</a></li>
-            <li><a href="#">Option Three</a></li>
-            <li><a href="#">Option Four</a></li>
-          </ul>
+          <a href="{{ child.url }}">{{ child.title }}</a>
         </li>
+        {%- endfor %}
       </ul>
+      {%- endif %}
     </li>
-    <li><a href="elements.html">Elements</a></li>
-    <li><a href="#" class="button">Sign Up</a></li>
+    {%- endfor %}
   </ul>
 </nav>

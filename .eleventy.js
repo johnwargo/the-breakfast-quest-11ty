@@ -1,3 +1,4 @@
+import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 import pluginDate from 'eleventy-plugin-date';
 import pluginRss from '@11ty/eleventy-plugin-rss';
@@ -14,6 +15,7 @@ const categoryDataFile = 'categoryData.json';
 
 export default async function (eleventyConfig) {
 
+	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addPlugin(pluginDate);
 	eleventyConfig.addPlugin(pluginGallery);
 	eleventyConfig.addPlugin(pluginRss);
@@ -54,18 +56,18 @@ export default async function (eleventyConfig) {
 		return theDate.toLocaleString(locale, options);
 	});
 
-	var firstRun = true;
-	eleventyConfig.on('eleventy.before', async ({ dir, runMode, outputMode }) => {
-		if (firstRun) {
-			firstRun = false;
-			generateCategoryPages({
-				dataFileName: categoryDataFile,
-				imageProperties: true,
-				quitOnError: true,
-				debugMode: false
-			});
-		}
-	});
+	// var firstRun = true;
+	// eleventyConfig.on('eleventy.before', async ({ dir, runMode, outputMode }) => {
+	// 	if (firstRun) {
+	// 		firstRun = false;
+	// 		generateCategoryPages({
+	// 			dataFileName: categoryDataFile,
+	// 			imageProperties: true,
+	// 			quitOnError: true,
+	// 			debugMode: false
+	// 		});
+	// 	}
+	// });
 
 	eleventyConfig.addPassthroughCopy({ 'src/favicon/*': '/' });
 	[
@@ -88,4 +90,5 @@ export default async function (eleventyConfig) {
 			data: '_data'
 		}
 	}
+
 };
