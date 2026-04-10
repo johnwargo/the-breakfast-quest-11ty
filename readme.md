@@ -22,11 +22,16 @@ What does this site need?
 
 ## Tasks
 
-- [ ] Set production flag in netlify
-- [ ] processed images in subfolder
+- [ ] About page content
+- [ ] Home page content/layout
+- [ ] Hero - multiple breakfast locations
+- [ ] Map page listing all locations on a, you know, map.
+- [ ] Post page, display map to the location
+- [ ] Algolia index
 - [ ] Search
 - [ ] Application icon
-- [ ] 
+- [ ] Newsletter
+- [ ] Newsletter sign-up
 - [ ] 
 - [ ] 
 - [ ] 
