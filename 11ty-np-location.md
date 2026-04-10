@@ -3,7 +3,7 @@ title:
 description: 
 date: 
 timestamp:
-location: true
+isLocation: true
 visitDate:
 website:
 address
