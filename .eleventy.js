@@ -5,8 +5,8 @@ import pluginRss from '@11ty/eleventy-plugin-rss';
 // My plugins
 import generateCategoryPages from 'eleventy-generate-category-pages';
 // local plugins
-import pluginGallery from "./11ty.gallery.js";
-import pluginImageHeaders from './11ty.headerimage.js';
+import pluginGallery from "./site.gallery.js";
+import pluginImageHeaders from './site.headerimage.js';
 // transforms
 import htmlMinTransform from './src/transforms/html-min.js';
 

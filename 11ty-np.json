@@ -5,7 +5,7 @@
   "postsFolder": "src/posts",
   "promptCategory": true,
   "promptTargetFolder": false,
-  "promptTemplateFile": false,
+  "promptTemplateFile": true,
   "templateFile": "11ty-np.md",
   "timeStamp": true,
   "useYear": true
