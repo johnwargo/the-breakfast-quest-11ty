@@ -6,7 +6,7 @@ timestamp:
 isLocation: true
 visitDate:
 website:
-address
+address:
 state:
 latitude:
 longitude:

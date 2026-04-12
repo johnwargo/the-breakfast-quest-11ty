@@ -6,11 +6,13 @@
  ***********************************************/
 
 import fs from 'fs';
+import path from 'node:path';
 //@ts-ignore
 import logger from 'cli-logger';
 
 const APP_NAME = 'Eleventy-Plugin-Generate-Location-Data';
 const durationStr = `[${APP_NAME}] Duration`;
+const defaultLocationStr = './_site/api/locations.json';
 
 // configure the logger
 var conf = { console: true, level: logger.INFO };
@@ -19,7 +21,7 @@ conf.prefix = function (record) {
 }
 var log = logger(conf);
 
-export default function (eleventyConfig, options = {}) {
+export default async function (eleventyConfig, options = {}) {
 
   // the following is a hidden/empty collection. This is the only way I can get
   // access to the collections API to build the list of posts I want to access.
@@ -32,24 +34,26 @@ export default function (eleventyConfig, options = {}) {
     // get the tag to use for the collection, default to post
     const tags = options.tags || ['post'];
     log.debug(`Using tags: ${tags.join(', ')}`);
-    // output file name
-    const outputFile = options.outputFile || './src/_data/locations.json';
-    log.debug(`Output file: ${outputFile}`);
+
+    const outputFilePath = path.join(process.cwd(), options.outputFile || defaultLocationStr);
+    log.debug(`Output file path: ${outputFilePath}`);
+    const outputFolderPath = path.dirname(outputFilePath);
+    log.debug(`Output folder: ${outputFolderPath}`);
 
     // make an empty array for the posts & locations
     var posts = [];
     var locations = [];
 
+    log.info('Building post list...');
     console.time(durationStr);
     // Process each tag separately since getFilteredByTag looks for
     // posts with all of the tags, not just the one we want
     for (let tag of tags) {
-      log.info(`Getting articles tagged with the "${tag}" tag`);
+      log.debug(`Getting articles tagged with the "${tag}" tag`);
       let tagPosts = collectionApi.getFilteredByTag(tag);
-      log.info(`Located ${tagPosts.length} "${tag}" articles`);
+      log.debug(`Located ${tagPosts.length} "${tag}" articles`);
       posts.push(...tagPosts);
     }
-    log.info('Processing posts for location data');
     if (posts.length > 0) {
       // we have posts
       log.info(`Located ${posts.length} posts with location data`);
@@ -67,22 +71,26 @@ export default function (eleventyConfig, options = {}) {
     } else {
       log.info(`No locations found in tag(s): ${tags.join(', ')}`);
     }
-    if (debugMode) {
-      console.dir(locations);
-    }
-    // write the locations object to the output file
+
+    // sort the locations list by name
+    locations.sort((a, b) => a.name.localeCompare(b.name));
+
+    log.debug(`Writing location data to ${outputFilePath}`);
     try {
-      fs.writeFileSync(outputFile, JSON.stringify(locations, null, 2));
-      log.info(`Location data written to ${outputFile}`);
+      // Create the target folder (if it doesn't exist)
+      fs.mkdirSync(outputFolderPath, { recursive: true });
+      // write the locations object to the output file
+      fs.writeFileSync(outputFilePath, JSON.stringify(locations, null, 2));
     } catch (err) {
-      log.error(`Error writing locations data to ${outputFile}: ${err}`);
+      log.error(`Error writing location data: ${err}`);
+      process.exit(1);
     }
 
-    log.info(`Completed location data generation`);
+    log.info(`Location data written to ${outputFilePath}`);
     console.timeEnd(durationStr);
-
     // Return empty array so "collections.internal_hidden_capture" is effectively empty
     return [];
   });
+
 
 };
