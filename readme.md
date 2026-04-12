@@ -19,8 +19,13 @@ https://www.latlong.net/convert-address-to-lat-long.html
 
 Or make a Visual Studio plugin that does it. 
 
+
+Maps API Kek: `AIzaSyBUKy-E5t6hf9e-3Lh1t3vP6kCHE-cxewI`
+
 ## Tasks
 
+- [ ] About and Locations pages don't render like the rest of the pages
+- [ ] get locations page working
 - [ ] About page content
 - [ ] Home page content/layout
 - [ ] Hero - multiple breakfast locations
