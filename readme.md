@@ -19,24 +19,38 @@ https://www.latlong.net/convert-address-to-lat-long.html
 
 Or make a Visual Studio plugin that does it. 
 
-
-Maps API Kek: `AIzaSyBUKy-E5t6hf9e-3Lh1t3vP6kCHE-cxewI`
-
 ## Tasks
 
-- [ ] About and Locations pages don't render like the rest of the pages
-- [ ] get locations page working
+- [x] About and Locations pages don't render like the rest of the pages
 - [ ] About page content
 - [ ] Home page content/layout
 - [ ] Hero - multiple breakfast locations
-- [ ] Map page listing all locations on a, you know, map.
-- [ ] put address on post? Then build locations file from post data?
+- [ ] Locations page listing all locations on a, you know, map.
 - [ ] Post page, display map to the location
+- [ ] Post page, display rating as stars
 - [ ] Algolia index
 - [ ] Search
 - [ ] Application icon
+- [ ] Contact form, use third party service (?)
+- [ ] Contact form **Reset** button
+- [ ] Contact form **Send** button
 - [ ] Newsletter
 - [ ] Newsletter sign-up
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+
+## Scott Tasks
+
+- [ ] Newsletter form
+  - [ ] Narrow input fields
+  - [ ] Suck up space above the form
+- [ ] 
+- [ ] 
 - [ ] 
 - [ ] 
 - [ ] 

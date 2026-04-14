@@ -21,7 +21,10 @@ siteTitle: The Breakfast Quest
 </head>
 
 <body class="is-preload">
-	{% include "header.html" %}
+	<header id="header"{%- if page.url == "/" %} class="alt"{%- endif %}>
+  	<h1><a href="/">{{siteTitle}} <span>from Anna and John Wargo</span></a></h1>
+  	{% include "nav.html" %}
+	</header>
 	{{ content }}
 	{% include "footer.html" %}
 	{% include "pagescripts.html" %}

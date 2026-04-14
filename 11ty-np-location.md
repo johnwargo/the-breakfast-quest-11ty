@@ -5,6 +5,7 @@ date:
 timestamp:
 isLocation: true
 visitDate:
+rating: 
 website:
 address:
 state:
