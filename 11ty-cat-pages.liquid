@@ -36,12 +36,12 @@ permalink: "categories/{{ category | slugify }}/{% if pagination.pageNumber != 0
         {% endfor %}
       {% endif %}
       <br/>
-      {% if post.data.description %}
-        {% include 'generated.html' %}
-      {% else %}
-        {% excerpt post %}
-      {% endif %}
-    </li>
+      <p>{%- if post.data.generatedDescription %}
+  <span class="generated"><a href="https://github.com/johnwargo/vscode-describer-genai/"
+      target="_blank">AI Generated</a></span>&nbsp;
+  {%- endif %}
+  {{ post.data.description }}
+  </p></li>
   {% endfor %}
 </ul>
 

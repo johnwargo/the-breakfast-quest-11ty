@@ -20,7 +20,7 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginDate);
 	eleventyConfig.addPlugin(pluginGallery);
 	eleventyConfig.addPlugin(pluginRss);
-	
+
 	// https://www.aleksandrhovhannisyan.com/blog/eleventy-image-transform/
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 		// which file extensions to process
@@ -42,7 +42,16 @@ export default async function (eleventyConfig) {
 		imageClass: 'image fit'
 	});
 
-		eleventyConfig.addFilter('readableTimestamp', function (dateVal, locale = 'en-us') {
+	eleventyConfig.addCollection('articlesByTimestamp', collectionAPI => {
+		return collectionAPI.getFilteredByTag('post').sort((a, b) => {
+			// use the timestamp if we have it, otherwise date
+			var aDate = a.data.timestamp ? new Date(a.data.timestamp) : new Date(a.date);
+			var bDate = b.data.timestamp ? new Date(b.data.timestamp) : new Date(b.date);
+			return aDate - bDate;
+		});
+	});
+
+	eleventyConfig.addFilter('readableTimestamp', function (dateVal, locale = 'en-us') {
 		// Used by home, articles, & post pages to render timestamp as human readable
 		var theDate = new Date(dateVal);
 		const options = {
