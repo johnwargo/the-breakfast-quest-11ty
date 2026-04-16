@@ -24,7 +24,7 @@ Or make a Visual Studio plugin that does it.
 - [x] About and Locations pages don't render like the rest of the pages
 - [ ] image scaling
 - [ ] About page content
-- [ ] Home page content/layout
+- [x] Home page content/layout
 - [ ] Hero - multiple breakfast locations
 - [ ] Locations page listing all locations on a, you know, map.
 - [ ] Post page, display map to the location

@@ -1,0 +1,49 @@
+---
+layout: generic
+title: Reviews
+description: All reviews in reverse chronological order.
+eleventyNavigation:
+  key: Reviews
+  order: 2
+pagination:
+  data: collections.reviewsByTimestamp
+  size: 20
+  alias: reviews
+  reverse: true
+---
+
+<p>This page lists all restaurant reviews in reverse chronological order, filtering out posts on general topics (articles).
+</p>
+
+{% if reviews.length > 0  %}
+  {% include 'pagination-count.html' %}
+
+  <ul class="posts">
+    <li>{% include 'ai-disclaimer.html' %}</li>
+    {% for review in reviews %}
+    <li>
+      <h4>
+        <a href="{{ review.url }}" style="cursor: pointer">{{ review.data.title }}</a>
+      </h4>
+      <strong>{%- if review.data.timestamp %}
+        {{ review.data.timestamp | readableTimestamp }}{%- else %}{{ review.date | readableDate }}{%- endif %}
+        {%- if review.data.categories.length > 0 %}&nbsp;in {% for cat in review.data.categories %}
+        <a href="/categories/{{ cat | slugify }}">{{ cat }}</a>
+        {%- unless forloop.last %},{% endunless %}
+        {%- endfor %}
+        {% endif %}</strong>
+      <br />
+      <p>{%- if review.data.generatedDescription %}
+        <span class="generated">
+          <a href="https://github.com/johnwargo/vscode-describer-genai/" target="_blank">
+            AI Generated</a>
+        </span>&nbsp;{%- endif %}
+        {{ review.data.description }}
+      </p>
+    </li>
+    {% endfor %}
+  </ul>
+  {% include 'pagination-nav.html' %}
+{% else %}
+  <p>No reviews found.</p>
+{% endif %}

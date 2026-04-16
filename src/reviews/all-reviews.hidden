@@ -1,0 +1,12 @@
+---
+title: Reviews
+layout: generic
+eleventyNavigation:
+  key: All Reviews
+  parent: Reviews
+  order: 1
+  url: /reviews/
+permalink: false
+---
+
+This file doesn't create a page, it navigates to the URL.
