@@ -5,8 +5,6 @@
 > [!WARNING]
 > Work in progress; this site may be publicly available, but it's not ready for prime time yet.
 
-Source code for the [thebreakfastquest.com](https://thebreakfastquest.com) web site.
-
 Netlify project: [https://breakfastquest.netlify.app/](https://breakfastquest.netlify.app/).
 
 ## Map
@@ -21,17 +19,17 @@ Or make a Visual Studio plugin that does it.
 
 ## Tasks
 
-- [x] About and Locations pages don't render like the rest of the pages
-- [x] Home page content/layout
-- [ ] image scaling
+- [ ] Fix image scaling
+- [ ] Home page images
+- [ ] Finish home page content
 - [ ] About page content
-- [ ] Hero - multiple breakfast locations
-- [ ] Locations page listing all locations on a, you know, map.
-- [ ] Post page, display map to the location
-- [ ] Post page, display rating as stars
+- [ ] Locations page
+- [ ] Post Page
+  - [ ] Post page, display map to the location
+  - [ ] Post page, display rating as stars
+- [ ] Application icon
 - [ ] Algolia index
 - [ ] Search
-- [ ] Application icon
 - [ ] Contact form, use third party service (?)
 - [ ] Contact form **Reset** button
 - [ ] Contact form **Send** button
@@ -66,3 +64,8 @@ Or make a Visual Studio plugin that does it.
 - [ ] Menus
 - [ ] News
 - [ ] Recipes?  Perhaps from the restaurants?
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
