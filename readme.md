@@ -1,11 +1,11 @@
 # The Breakfast Quest
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d2459447-19e0-4037-8fd1-12cbbf173fa0/deploy-status)](https://app.netlify.com/projects/breakfastquest/deploys)
+
 > [!WARNING]
 > Work in progress; this site may be publicly available, but it's not ready for prime time yet.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d2459447-19e0-4037-8fd1-12cbbf173fa0/deploy-status)](https://app.netlify.com/projects/breakfastquest/deploys)
-
-Source code for the thebreakfastquest.com web site.
+Source code for the [thebreakfastquest.com](https://thebreakfastquest.com) web site.
 
 Netlify project: [https://breakfastquest.netlify.app/](https://breakfastquest.netlify.app/).
 
@@ -22,9 +22,9 @@ Or make a Visual Studio plugin that does it.
 ## Tasks
 
 - [x] About and Locations pages don't render like the rest of the pages
+- [x] Home page content/layout
 - [ ] image scaling
 - [ ] About page content
-- [x] Home page content/layout
 - [ ] Hero - multiple breakfast locations
 - [ ] Locations page listing all locations on a, you know, map.
 - [ ] Post page, display map to the location
