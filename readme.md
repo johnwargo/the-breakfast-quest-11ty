@@ -20,8 +20,11 @@ Or make a Visual Studio plugin that does it.
 ## Tasks
 
 - [ ] Fix image scaling
-- [ ] Home page images
-- [ ] Finish home page content
+- [ ] Home Page
+  - [ ] Section images
+  - [ ] Most popular posts
+  - [ ] Finish home page content
+- [ ] Most popular articles page
 - [ ] About page content
 - [ ] Locations page
 - [ ] Post Page
