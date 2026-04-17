@@ -27,6 +27,7 @@ Or make a Visual Studio plugin that does it.
 - [ ] Most popular articles page
 - [ ] About page content
 - [ ] Locations page
+  - [ ] Make PWA and cache locations data locally
 - [ ] Post Page
   - [ ] Post page, display map to the location
   - [ ] Post page, display rating as stars
