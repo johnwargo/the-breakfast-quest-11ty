@@ -19,7 +19,7 @@ Or make a Visual Studio plugin that does it.
 
 ## Tasks
 
-- [ ] Fix image scaling
+- [ ] Fix image scaling, size them for mobile
 - [ ] Home Page
   - [ ] Section images
   - [ ] Most popular posts
