@@ -1,0 +1,10 @@
+.generated {
+  border-radius: 5px;
+  padding: 3px;
+  background: #eee;
+  font-size: 0.5rem;
+  color: black;
+  border: 1px solid #999;
+  position: relative;
+  top: -1px;
+}

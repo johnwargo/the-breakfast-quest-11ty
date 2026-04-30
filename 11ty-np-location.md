@@ -8,6 +8,7 @@ visitDate:
 rating: 
 website:
 address:
+city: 
 state:
 latitude:
 longitude:

@@ -7,6 +7,7 @@ visitDate: 2026-04-10
 website: https://whalestailbeachrestaurant.com/
 isLocation: true
 address: 1373 Hwy 2378, Miramar Beach, Florida 32550
+city: Miramar Beach
 state: Florida
 latitude: 30.375934
 longitude: -86.371570
