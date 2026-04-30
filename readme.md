@@ -28,6 +28,7 @@ Or make a Visual Studio plugin that does it.
 - [ ] About page content
 - [ ] Locations page
   - [ ] Make PWA and cache locations data locally
+  - [ ] Display visit date(s) on list view
   - [ ] By visit date view
   - [ ] By name view
 - [ ] Post Page
