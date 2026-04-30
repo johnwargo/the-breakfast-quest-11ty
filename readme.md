@@ -28,10 +28,11 @@ Or make a Visual Studio plugin that does it.
 - [ ] About page content
 - [ ] Locations page
   - [ ] Make PWA and cache locations data locally
-  - [ ] Display visit date(s) on list view
+- [ ] Location List
+  - [ ] Display visit dates
   - [ ] By visit date view
-  - [ ] By name view
-- [ ] Post Page
+  - [ ] By name view 
+- [ ] Location Page
   - [ ] Post page, display map to the location
   - [ ] Post page, display rating as stars
 - [ ] Application icon
