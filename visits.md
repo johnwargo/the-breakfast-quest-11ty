@@ -1,5 +1,16 @@
 # Visit Log
 
+- [ ] Porters: https://porterszp.com/
+- [ ] Jakey Leigh's Coffee Shop: https://www.facebook.com/jakeyleighscoffeeshop/
+- [ ] Citizens: https://mandalaybay.mgmresorts.com/en/restaurants/citizens.html
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+
 ## The Whale's Tail Beach Bar & Grill
 2026-04-10
 1373 Hwy 2378, Miramar Beach, FL 32550
@@ -11,3 +22,5 @@ Limited menu, but great comfort food options. I ordered the Whaler which is basi
 Service on paper plates 
 slightly odd taste to their drinks, I assume because of well water. 
 One interesting menu item is a crab omelette; perhaps I'll try that the next time I'm there.
+
+

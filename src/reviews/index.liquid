@@ -17,9 +17,8 @@ pagination:
 
 {% if reviews.length > 0  %}
   {% include 'pagination-count.html' %}
-
-  <ul class="posts">
-    <li>{% include 'ai-disclaimer.html' %}</li>
+{% include 'ai-disclaimer.html' %}
+  <ul>    
     {% for review in reviews %}
     <li>
       <h4>
