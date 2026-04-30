@@ -3,8 +3,9 @@ layout: generic
 title: Reviews
 description: All reviews in reverse chronological order.
 eleventyNavigation:
-  key: Reviews
-  order: 3
+  key: By Name
+  order: 2
+  parent: Reviews
 pagination:
   data: collections.reviewsByTimestamp
   size: 20
@@ -12,7 +13,7 @@ pagination:
   reverse: true
 ---
 
-<p>This page lists all restaurant reviews by date in chronological order.</p>
+<p>This page lists all restaurant reviews by name in alphabetical order.</p>
 
 {% if reviews.length > 0  %}
   {% include 'pagination-count.html' %}
