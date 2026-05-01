@@ -1,5 +1,5 @@
 ///
-/// Slate by Pixelarity
+/// Editorial by Pixelarity
 /// pixelarity.com | hello@pixelarity.com
 /// License: pixelarity.com/license
 ///
@@ -17,9 +17,13 @@
 
 		tbody {
 			tr {
-				border: solid 1px;
+				border: solid 1px _palette(border);
 				border-left: 0;
 				border-right: 0;
+
+				&:nth-child(2n + 1) {
+					background-color: _palette(border-bg);
+				}
 			}
 		}
 
@@ -28,20 +32,19 @@
 		}
 
 		th {
+			color: _palette(fg-bold);
+			font-size: 0.9em;
+			font-weight: _font(weight-bold);
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
-			text-transform: uppercase;
-			font-size: 0.9em;
-			font-family: _font(family-heading);
-			font-weight: _font(weight-heading-bold);
 		}
 
 		thead {
-			border-bottom: solid 2px;
+			border-bottom: solid 2px _palette(border);
 		}
 
 		tfoot {
-			border-top: solid 2px;
+			border-top: solid 2px _palette(border);
 		}
 
 		&.alt {
@@ -50,7 +53,7 @@
 			tbody {
 				tr {
 					td {
-						border: solid 1px;
+						border: solid 1px _palette(border);
 						border-left-width: 0;
 						border-top-width: 0;
 
@@ -76,41 +79,3 @@
 			}
 		}
 	}
-
-	@mixin color-table($p: null) {
-		table {
-			tbody {
-				tr {
-					border-color: _palette($p, border);
-
-					&:nth-child(2n + 1) {
-						background-color: _palette($p, border-bg);
-					}
-				}
-			}
-
-			th {
-				color: _palette($p, fg-bold);
-			}
-
-			thead {
-				border-bottom-color: _palette($p, border);
-			}
-
-			tfoot {
-				border-top-color: _palette($p, border);
-			}
-
-			&.alt {
-				tbody {
-					tr {
-						td {
-							border-color: _palette($p, border);
-						}
-					}
-				}
-			}
-		}
-	}
-
-	@include color-table;

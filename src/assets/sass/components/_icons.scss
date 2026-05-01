@@ -1,5 +1,5 @@
 ///
-/// Slate by Pixelarity
+/// Editorial by Pixelarity
 /// pixelarity.com | hello@pixelarity.com
 /// License: pixelarity.com/license
 ///
@@ -7,6 +7,7 @@
 /* Icons */
 
 	ul.icons {
+		cursor: default;
 		list-style: none;
 		padding-left: 0;
 
@@ -19,8 +20,10 @@
 			}
 
 			.icon {
+				color: inherit;
+
 				&:before {
-					font-size: 2em;
+					font-size: 1.25em;
 				}
 			}
 		}

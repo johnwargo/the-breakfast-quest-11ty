@@ -1,5 +1,5 @@
 ///
-/// Slate by Pixelarity
+/// Editorial by Pixelarity
 /// pixelarity.com | hello@pixelarity.com
 /// License: pixelarity.com/license
 ///
@@ -7,7 +7,8 @@
 /* Box */
 
 	.box {
-		border: solid 1px;
+		border-radius: _size(border-radius);
+		border: solid 1px _palette(border);
 		margin-bottom: _size(element-margin);
 		padding: 1.5em;
 
@@ -19,14 +20,7 @@
 
 		&.alt {
 			border: 0;
+			border-radius: 0;
 			padding: 0;
 		}
 	}
-
-	@mixin color-box($p: null) {
- 		.box {
- 			border-color: _palette($p, border);
- 		}
-	}
-
-	@include color-box;

@@ -1,5 +1,5 @@
 ///
-/// Slate by Pixelarity
+/// Editorial by Pixelarity
 /// pixelarity.com | hello@pixelarity.com
 /// License: pixelarity.com/license
 ///
@@ -7,11 +7,13 @@
 /* Image */
 
 	.image {
+		border-radius: _size(border-radius);
 		border: 0;
 		display: inline-block;
 		position: relative;
 
 		img {
+			border-radius: _size(border-radius);
 			display: block;
 		}
 
@@ -26,13 +28,13 @@
 
 		&.left {
 			float: left;
-			margin: 0 1.5em 1em 0;
+			padding: 0 1.5em 1em 0;
 			top: 0.25em;
 		}
 
 		&.right {
 			float: right;
-			margin: 0 0 1em 1.5em;
+			padding: 0 0 1em 1.5em;
 			top: 0.25em;
 		}
 
@@ -53,6 +55,20 @@
 
 			img {
 				width: 100%;
+			}
+		}
+	}
+
+	a.image {
+		overflow: hidden;
+
+		img {
+			@include vendor('transition', 'transform #{_duration(transition)} ease');
+		}
+
+		&:hover {
+			img {
+				@include vendor('transform', 'scale(1.075)');
 			}
 		}
 	}

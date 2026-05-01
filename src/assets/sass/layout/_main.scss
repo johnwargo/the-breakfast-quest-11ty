@@ -1,5 +1,5 @@
 ///
-/// Slate by Pixelarity
+/// Editorial by Pixelarity
 /// pixelarity.com | hello@pixelarity.com
 /// License: pixelarity.com/license
 ///
@@ -7,30 +7,51 @@
 /* Main */
 
 	#main {
-		@include padding(6em, 0);
+		@include vendor('flex-grow', '1');
+		@include vendor('flex-shrink', '1');
+		width: 100%;
 
 		> .inner {
-			> header.major:first-child {
-				margin-bottom: 6em;
+			@include padding(0, 6em);
+			margin: 0 auto;
+			max-width: 110em;
+
+			> section {
+				@include padding(6em, 0);
+				border-top: solid 2px _palette(border);
+
+				&:first-of-type {
+				 	border-top: 0 !important;
+				}
+			}
+		}
+
+		@include breakpoint('<=xlarge') {
+			> .inner {
+				@include padding(0, 5em);
+
+				> section {
+					@include padding(5em, 0);
+				}
 			}
 		}
 
 		@include breakpoint('<=large') {
-			@include padding(4em, 0);
-
 			> .inner {
-				> header.major:first-child {
-					margin-bottom: 4em;
+				@include padding(0, 4em);
+
+				> section {
+					@include padding(4em, 0);
 				}
 			}
 		}
 
 		@include breakpoint('<=small') {
-			@include padding(2.5em, 0);
-
 			> .inner {
-				> header.major:first-child {
-					margin-bottom: 2.5em;
+				@include padding(0, 2em);
+
+				> section {
+					@include padding(3em, 0);
 				}
 			}
 		}

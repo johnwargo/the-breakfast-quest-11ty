@@ -1,5 +1,5 @@
 ///
-/// Slate by Pixelarity
+/// Editorial by Pixelarity
 /// pixelarity.com | hello@pixelarity.com
 /// License: pixelarity.com/license
 ///
@@ -22,13 +22,29 @@
 					'color #{_duration(transition)} ease-in-out'
 				));
 				border-bottom: 0;
+				border-radius: _size(border-radius);
 				display: inline-block;
-				height: 1.5em;
-				line-height: 1.5em;
+				font-size: 0.8em;
+				font-weight: _font(weight-bold);
+				height: 2em;
+				line-height: 2em;
 				margin: 0 0.125em;
-				min-width: 1.5em;
+				min-width: 2em;
 				padding: 0 0.5em;
 				text-align: center;
+
+				&.active {
+					background-color: _palette(accent);
+					color: _palette(bg) !important;
+
+					&:hover {
+						background-color: lighten(_palette(accent), 3);
+					}
+
+					&:active {
+						background-color: darken(_palette(accent), 3);
+					}
+				}
 			}
 
 			&:first-child {
@@ -52,28 +68,3 @@
 			}
 		}
 	}
-
-	@mixin color-pagination($p: null) {
-		$highlight: _palette($p, highlight);
-
-		ul.pagination {
-			li {
-				> .page {
-					&.active {
-						background-color: _palette($highlight, bg);
-						color: _palette($highlight, fg-bold) !important;
-
-						&:hover {
-							background-color: lighten(_palette($highlight, bg), 5);
-						}
-
-						&:active {
-							background-color: darken(_palette($highlight, bg), 5);
-						}
-					}
-				}
-			}
-		}
-	}
-
-	@include color-pagination;
