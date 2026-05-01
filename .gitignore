@@ -1,10 +1,10 @@
 # Folders
 _site/
 node_modules/
-px-slate-html/
+px*/
 
 # Files
 .DS_Store
 link-checker-results.*
-px-slate-html.zip
+px-*.zip
 maps.key
