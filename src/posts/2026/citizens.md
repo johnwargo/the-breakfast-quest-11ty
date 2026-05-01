@@ -14,3 +14,5 @@ latitude: 36.093750
 longitude: -115.177010
 categories: 
 ---
+
+Rump salami capicola chislic. Kielbasa pastrami sausage, jerky bacon flank brisket capicola rump t-bone sirloin landjaeger short loin. Frankfurter cow alcatra porchetta. Short ribs pig rump picanha drumstick, boudin pastrami chicken. Tri-tip chicken shank salami prosciutto pancetta cow. Brisket pork loin alcatra, burgdoggen prosciutto beef pancetta sirloin boudin ground round ham hock filet mignon.
