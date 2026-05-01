@@ -16,18 +16,18 @@ siteTitle: The Breakfast Quest
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="/assets/css/main.css" />
 	<link rel="stylesheet" href="/assets/css/scott.css" />
-	<noscript>
-		<link rel="stylesheet" href="/assets/css/noscript.css" />
-	</noscript>
 </head>
 
 <body class="is-preload">
-	<header id="header">
-  	<h1><a href="/">{{siteTitle}} <span>from Anna and John Wargo</span></a></h1>
-  	{% include "nav.html" %}
-	</header>
-	{{ content }}
-	{% include "footer.html" %}
+	<div id="wrapper">
+		<div id="main">
+			<div class="inner">
+				{% include "header.html" %}
+				{{ content }}
+			</div>
+		</div>
+		{% include "sidebar.html" %}
+	</div>
 	{% include "pagescripts.html" %}
 </body>
 
