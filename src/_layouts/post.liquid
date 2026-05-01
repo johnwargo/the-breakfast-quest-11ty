@@ -2,18 +2,18 @@
 layout: base
 ---
 
-<section id="main" class="wrapper">
-  <div class="inner">
-    <header class="major">
+<section>
+  <article>
+    <header class="main">
       <h2>{{ title }}</h2>
       <p>{{ callout }}</p>
     </header>
     {% include "pretty-print.html" %}
-    <div class="content">{{ content }}</div>
-  </div>
+    <br /><br />
+    <p><strong>Visit Date(s):</strong> {{ visitDates }}</p>
+    <p><strong>Rating:</strong> {{ rating }}</p>
+    <p><strong>Web site:</strong> <a href="{{ website }}" target="_blank">{{ website }}</a></p>
+    <p><strong>Address:</strong> {{ address }}</p>
+    {{ content }}
+  </article>
 </section>
-
-
-Display address
-Display link to maps
-Display rating
