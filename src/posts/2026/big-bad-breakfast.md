@@ -1,5 +1,5 @@
 ---
-title: Big Bad Breakfast (Miramar Beach)
+title: Big Bad Breakfast
 description: A quirky chain of breakfast joints with cocktails and dishes made with "ham powder".
 date: 2026-04-12
 timestamp: 2026-04-12T14:47:59.347Z
