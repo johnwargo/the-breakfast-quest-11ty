@@ -9,8 +9,8 @@ import pluginGallery from "./site.gallery.js";
 import pluginLocations from './site.locations.js';
 import pluginImageHeaders from './site.headerimage.js';
 // transforms
-import htmlMinify from './src/transforms/transform-minify.js';
-import htmlPrettify from './src/transforms/transform-prettify.js';
+import htmlMinify from './transforms/transform-minify.js';
+import htmlPrettify from './transforms/transform-prettify.js';
 
 const isProduction = process.env.NODE_ENV === 'production';
 const categoryDataFile = 'categoryData.json';
