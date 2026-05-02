@@ -46,12 +46,14 @@ geocoder <restaurant_address>
 - [ ] Locations page
   - [ ] Make PWA and cache locations data locally
 - [ ] Application icon
+- [ ] Setup info@ email address
 - [ ] Algolia index
 - [ ] Search
 - [ ] Most popular articles page
-- [ ] Contact form, use third party service (?)
-- [ ] Contact form **Reset** button
-- [ ] Contact form **Send** button
+- [ ] Contact form
+  - [ ] Use third party service (?)
+  - [ ] Contact form **Reset** button
+  - [ ] Contact form **Send** button
 - [ ] Newsletter
 - [ ] Newsletter sign-up
 - [ ] 

@@ -76,6 +76,10 @@ export default async function (eleventyConfig) {
 		return theDate.toLocaleString(locale, options);
 	});
 
+	eleventyConfig.addShortcode('GetKeywords', categories => {
+		return categories.join(', ');
+	});
+
 	var firstRun = true;
 	eleventyConfig.on('eleventy.before', async ({ dir, runMode, outputMode }) => {
 		if (firstRun) {

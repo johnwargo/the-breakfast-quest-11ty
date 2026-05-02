@@ -11,9 +11,8 @@ siteTitle: The Breakfast Quest
 <html>
 
 <head>
-	<title>{{ siteTitle }}</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<title>{{ title }}: {{ siteTitle }}</title>
+	{% include "metadata.html" %}
 	<link rel="stylesheet" href="/assets/css/main.css" />
 	<link rel="stylesheet" href="/assets/css/scott.css" />
 </head>
@@ -25,8 +24,8 @@ siteTitle: The Breakfast Quest
 				{% include "header.html" %}
 				{{ content }}
 			</div>
-		</div>	
-		{% include "sidebar.html" %}			
+		</div>
+		{% include "sidebar.html" %}
 	</div>
 	{% include "pagescripts.html" %}
 </body>

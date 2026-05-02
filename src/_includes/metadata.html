@@ -1,0 +1,15 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="generator" content="{{ eleventy.generator }}">
+<meta name="author" content="John M. Wargo">
+{% if description %}
+  <meta name="description" content="{{ description }}" />
+  <meta property="og:description" content="{{ description }}"  />
+{% endif %}
+<meta property="og:title" content="{{ title }}: {{ siteTitle }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://thebreakfastquest.com{{ page.url }}" />
+<!-- <meta property="og:image" content="https://thebreakfastquest.com/images/avatar/jmw-64.png" /> -->
+{% if categories %}
+  <meta name="keywords" content="{% GetKeywords categories %}">
+{% endif %}
