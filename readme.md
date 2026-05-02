@@ -14,31 +14,33 @@ With Google Maps, you can feed it a data file with latitude and longitude values
 Recommend adding long and lat values to post front matter and generating the file during the build process. 
 Map page loads the data file from the server and passes it to the Google Maps API.
 
-https://www.latlong.net/convert-address-to-lat-long.html
+Use the `geocoder` command in the terminal to calculate latitude and longitude from an address
 
-Or make a Visual Studio plugin that does it. 
+``` shell
+geocoder <restaurant_address>
+```
 
 ## Tasks
 
 - [ ] Fix image scaling, size them for mobile
 - [ ] Home Page
-  - [ ] Section images
-  - [ ] Most popular posts
-  - [ ] Finish home page content
-- [ ] Most popular articles page
+  - [x] Section images
+  - [ ] Page content
+  - [ ] Top 10 most popular posts listing
 - [ ] About page content
-- [ ] Locations page
-  - [ ] Make PWA and cache locations data locally
-- [ ] Location List
-  - [ ] Display visit dates
-  - [ ] By visit date view
-  - [ ] By name view 
-- [ ] Location Page
+- [ ] Reviews 
+  - [ ] By Restaurant name
+  - [ ] By Visit date
+  - [ ] By State (collapsed)
+- [ ] Review Page
   - [ ] Post page, display map to the location
   - [ ] Post page, display rating as stars
+- [ ] Locations page
+  - [ ] Make PWA and cache locations data locally
 - [ ] Application icon
 - [ ] Algolia index
 - [ ] Search
+- [ ] Most popular articles page
 - [ ] Contact form, use third party service (?)
 - [ ] Contact form **Reset** button
 - [ ] Contact form **Send** button
