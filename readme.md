@@ -28,9 +28,8 @@ geocoder <restaurant_address>
 
 ## Tasks
 
-- [ ] Higher image breakfast plate image
-- [ ] Fix image scaling, size them for mobile
-- [ ] Navigation
+- [ ] Higher resolution breakfast plate image
+- [x] Navigation
 - [ ] Home Page
   - [x] Section images
   - [ ] Page content
