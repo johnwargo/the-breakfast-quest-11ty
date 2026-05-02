@@ -3,7 +3,7 @@ layout: generic
 title: About This Site
 eleventyNavigation:
   key: About
-  order: 9
+  order: 2
 ---
 
 Bacon ipsum dolor amet swine meatloaf picanha, porchetta alcatra sausage tongue strip steak brisket fatback beef ribs rump boudin. Ground round shoulder chicken, andouille rump fatback jerky chuck venison sausage cupim drumstick cow t-bone pastrami. Ham t-bone corned beef turkey alcatra tongue. Ribeye ball tip capicola t-bone frankfurter flank bacon cow bresaola chuck jerky brisket andouille pig. Frankfurter short loin pork, t-bone ham chicken ribeye.
