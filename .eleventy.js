@@ -44,13 +44,21 @@ export default async function (eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection('reviewsByTimestamp', collectionAPI => {
-		// find all posts where `post.data.isLocation` is true
 		return collectionAPI.getFilteredByTag('post').filter(post => post.data.isLocation)
 			.sort((a, b) => {
 				var aDate = a.data.timestamp ? new Date(a.data.timestamp) : new Date(a.date);
 				var bDate = b.data.timestamp ? new Date(b.data.timestamp) : new Date(b.date);
 				return aDate - bDate;
 			});
+	});
+
+	eleventyConfig.addCollection('reviewsByName', collectionAPI => {
+		return collectionAPI.getFilteredByTag('post').filter(post => post.data.isLocation)
+			.sort((a, b) => {
+      let titleA = a.data.title || "";
+      let titleB = b.data.title || "";
+      return titleB.localeCompare(titleA);
+    });
 	});
 
 	eleventyConfig.addCollection('articlesByTimestamp', collectionAPI => {

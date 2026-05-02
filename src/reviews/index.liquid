@@ -4,7 +4,7 @@ title: Reviews
 description: All reviews in reverse chronological order.
 eleventyNavigation:
   key: Reviews
-  order: 3
+  order: 5
 pagination:
   data: collections.reviewsByTimestamp
   size: 20
@@ -15,32 +15,35 @@ pagination:
 <p>This page lists all restaurant reviews by date in chronological order.</p>
 
 {% if reviews.length > 0  %}
+  <hr class="major" />
   {% include 'pagination-count.html' %}
-  <ul>    
-    {% for review in reviews %}
-    <li>
+
+  {% for review in reviews | reverse %}
+    <article>
       <h4>
         <a href="{{ review.url }}" style="cursor: pointer">{{ review.data.title }}</a>
       </h4>
-      <strong>{%- if review.data.timestamp %}
-        {{ review.data.timestamp | readableTimestamp }}{%- else %}{{ review.date | readableDate }}{%- endif %}
-        {%- if review.data.categories.length > 0 %}&nbsp;in {% for cat in review.data.categories %}
-        <a href="/categories/{{ cat | slugify }}">{{ cat }}</a>
-        {%- unless forloop.last %},{% endunless %}
-        {%- endfor %}
-        {% endif %}</strong>
-      <br />
-      <p>{%- if review.data.generatedDescription %}
-        <span class="generated">
-          <a href="https://github.com/johnwargo/vscode-describer-genai/" target="_blank">
-            AI Generated</a>
-        </span>&nbsp;{%- endif %}
-        {{ review.data.description }}
-      </p>
-    </li>
-    {% endfor %}
-  </ul>
+      <strong>Posted:</strong>&nbsp; 
+        {%- if review.data.timestamp %}
+          {{ review.data.timestamp | readableTimestamp }}
+        {%- else %}
+          {{ review.date | readableDate }}
+        {%- endif %}    
+        {%- if review.data.categories.length > 0 %}&nbsp;in&nbsp;
+          {%- for cat in review.data.categories %}
+            <a href="/categories/{{ cat | slugify }}">{{ cat }}</a>
+            {%- unless forloop.last %},{% endunless %}
+          {%- endfor %}
+        {% endif %}
+        <br />
+        {%- if review.data.visitDate.length > 0 %}<strong>Visits:</strong>&nbsp;{{ review.data.visitDate.length }}<br />{%- endif %}
+        {% if review.data.description %}{{ review.data.description }}{% endif %}
+      </article>
+      <hr class="major" />
+  {% endfor %}
+
   {% include 'pagination-nav.html' %}
+
 {% else %}
   <p>No reviews found.</p>
 {% endif %}

@@ -29,7 +29,8 @@ pagination:
       <br />
       <strong>Visit date(s):</strong>&nbsp;{{ post.data.visitDate | readableDate }}
     {%- endif %}
-    <br /><strong>Posted: {%- if post.data.timestamp %}
+    <br />
+    <strong>Posted: {%- if post.data.timestamp %}
         {{ post.data.timestamp | readableTimestamp }}
         {%- else %}
         {{ post.date | readableDate }}
@@ -49,6 +50,4 @@ pagination:
   </article>
   <hr class="major" />
 {% endfor %}
-
 {% include 'pagination-nav.html' %}
-{% include "footer.html" %}

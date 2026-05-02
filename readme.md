@@ -35,8 +35,8 @@ geocoder <restaurant_address>
   - [ ] Page content
 - [ ] About page content
 - [ ] Reviews 
-  - [ ] By Restaurant name
-  - [ ] By Visit date
+  - [x] By Restaurant name
+  - [x] By Visit date
   - [ ] By State (collapsed)
 - [ ] Review Page
   - [ ] Post page, display map to the location
