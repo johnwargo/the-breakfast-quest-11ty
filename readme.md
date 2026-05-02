@@ -33,7 +33,6 @@ geocoder <restaurant_address>
 - [ ] Home Page
   - [x] Section images
   - [ ] Page content
-  - [ ] Top 10 most popular posts listing
 - [ ] About page content
 - [ ] Reviews 
   - [ ] By Restaurant name
@@ -48,7 +47,6 @@ geocoder <restaurant_address>
 - [ ] Setup info@ email address
 - [ ] Algolia index
 - [ ] Search
-- [ ] Most popular articles page
 - [ ] Contact form
   - [ ] Use third party service (?)
   - [ ] Contact form **Reset** button
@@ -63,6 +61,11 @@ geocoder <restaurant_address>
 - [ ] 
 - [ ] 
 - [ ] 
+
+## Post Launch
+
+- [ ] Home Page: Top 10 popular posts listing
+- [ ] Most popular articles page
 
 ## Scott Tasks
 
