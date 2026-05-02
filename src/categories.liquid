@@ -20,9 +20,9 @@ eleventyNavigation:
             <a href="/categories/{{ catData.category | slugify }}/">{{ catData.category }}</a>
           </h4>
           {{ catData.count }} Post{%- if catData.count > 1 %}s{% endif %}
-            {% if catData.description.length > 0 %}
-              | {{ catData.description }}
-            {% endif %}
+          {% if catData.description.length > 0 %}
+            | {{ catData.description }}
+          {% endif %}
         {% endtablerow %}
       </table>
     </div>
@@ -32,11 +32,11 @@ eleventyNavigation:
       <article>
         <h4>
             <a href="/categories/{{ catData.category | slugify }}/">{{ catData.category }}</a>
-          </h4>
-          {{ catData.count }}&nbspPost{%- if catData.count > 1 %}s{% endif %}
-            {% if catData.description.length > 0 %}
-              | {{ catData.description }}
-            {% endif %}
+        </h4>
+        {{ catData.count }}&nbspPost{%- if catData.count > 1 %}s{% endif %}
+          {% if catData.description.length > 0 %}
+            | {{ catData.description }}
+          {% endif %}
       </article>
       <hr class="major" />
     {% endfor %}
