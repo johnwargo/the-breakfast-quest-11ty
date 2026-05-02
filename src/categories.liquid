@@ -11,21 +11,23 @@ eleventyNavigation:
 
 <p>View all posts for a particular category by clicking on one of the categories listed below. There are {{ categories.length }} categories on the site today.</p>
 
-<hr class="major" />  
-{% if categories.length > 0 %}
+{% if categories.length > 0 %}  
   {% if categories.length > 10 %}
-    <table>
-      {% tablerow catData in categories cols:2 %}
-        <h4>
-          <a href="/categories/{{ catData.category | slugify }}/">{{ catData.category }}</a>
-        </h4>
-        {{ catData.count }} Post{%- if catData.count > 1 %}s{% endif %}
-          {% if catData.description.length > 0 %}
-            | {{ catData.description }}
-          {% endif %}
-      {% endtablerow %}
-    </table>
+    <div class="table-wrapper"> 
+      <table>
+        {% tablerow catData in categories cols:2 %}
+          <h4>
+            <a href="/categories/{{ catData.category | slugify }}/">{{ catData.category }}</a>
+          </h4>
+          {{ catData.count }} Post{%- if catData.count > 1 %}s{% endif %}
+            {% if catData.description.length > 0 %}
+              | {{ catData.description }}
+            {% endif %}
+        {% endtablerow %}
+      </table>
+    </div>
   {% else %}
+    <hr class="major" />  
     {% for catData in categories %}
       <article>
         <h4>
