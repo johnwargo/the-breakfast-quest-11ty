@@ -54,7 +54,8 @@ geocoder <restaurant_address>
   - [ ] Contact form **Reset** button
   - [ ] Contact form **Send** button
 - [ ] Newsletter
-- [ ] Newsletter sign-up
+  - [ ] Newsletter sign-up in sidebar
+  - [ ] Delete About menu item
 - [ ] 
 - [ ] 
 - [ ] 
