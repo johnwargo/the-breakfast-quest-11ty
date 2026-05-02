@@ -9,7 +9,8 @@ import pluginGallery from "./site.gallery.js";
 import pluginLocations from './site.locations.js';
 import pluginImageHeaders from './site.headerimage.js';
 // transforms
-import htmlMinTransform from './src/transforms/html-min.js';
+import htmlMinify from './src/transforms/transform-minify.js';
+import htmlPrettify from './src/transforms/transform-prettify.js';
 
 const isProduction = process.env.NODE_ENV === 'production';
 const categoryDataFile = 'categoryData.json';
@@ -102,8 +103,13 @@ export default async function (eleventyConfig) {
 		eleventyConfig.addPassthroughCopy(path);
 	});
 
-	// Only minify HTML if we are in production
-	if (isProduction) eleventyConfig.addTransform('htmlmin', htmlMinTransform);
+	if (isProduction) {
+		// Only minify HTML if we are in production
+		eleventyConfig.addTransform('txHtmlMinify', htmlMinify);
+	} else {
+		// otherwise prettify
+		eleventyConfig.addTransform('txHtmlPrettify', htmlPrettify);
+	}
 
 	return {
 		dir: {
