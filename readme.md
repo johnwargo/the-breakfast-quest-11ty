@@ -6,7 +6,7 @@
 > Work in progress; this site may be publicly available, but it's not ready for prime time yet.
 
 Netlify project: [https://breakfastquest.netlify.app/](https://breakfastquest.netlify.app/).
-Pixelarity Template: [Slate](https://pixelarity.com/slate)
+Pixelarity Template: [Editorial](https://pixelarity.com/editorial)
 
 ## Map
 
