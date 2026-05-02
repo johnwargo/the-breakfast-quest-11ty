@@ -1,6 +1,6 @@
 ---js
 {
-  "layout": "base",
+  "layout": "generic",
   "pagination": {
     "data": "collections.articlesByTimestamp",
     "size": 20,
@@ -8,7 +8,7 @@
     "before": function(paginationData, fullData){ let data = paginationData.filter((item) => item.data.categories && item.data.categories.includes('Beachside')); return Array.from(data).sort((a, b) => { return a.date < b.date ? 1 : -1; });}
   },
   "category": "Beachside",
-  "description": "",
+  "description": "Highlights beachside restaurants.",
   "eleventyComputed": {
     "title": "{{ category }}"
   },
@@ -20,34 +20,27 @@
 
 <p>{{ description }}&nbsp;This page lists all posts in the category, in reverse chronological order.</p>
 
-<ul class="posts">
-  <li>{% include 'ai-disclaimer.html' %}</li>
-  {% for post in catposts %}
-    <li>
-      <h4>
-        <a href="{{post.url}}" style="cursor: pointer">{{ post.data.title }}</a>
-      </h4>
-      Posted {%- if post.data.timestamp %}
-        {{ post.data.timestamp | readableTimestamp }}
-        {%- else %}
-        {{ post.date | readableDate }}
-        {%- endif %}&nbsp;
-      {% if post.data.categories.length > 0 %}
-        in
-        {% for cat in post.data.categories %}
-          <a href="/categories/{{ cat | slugify }}">{{ cat }}</a>
-          {%- unless forloop.last %},
-          {% endunless %}
-        {% endfor %}
-      {% endif %}
-      <br/>
-      <p>{%- if post.data.generatedDescription %}
-  <span class="generated"><a href="https://github.com/johnwargo/vscode-describer-genai/"
-      target="_blank">AI Generated</a></span>&nbsp;
-  {%- endif %}
-  {{ post.data.description }}
-  </p></li>
-  {% endfor %}
-</ul>
+{% for post in catposts %}
+  <article>
+    <h4>
+      <a href="{{post.url}}" style="cursor: pointer">{{ post.data.title }}</a>
+    </h4>
+    Posted {%- if post.data.timestamp %}
+      {{ post.data.timestamp | readableTimestamp }}
+      {%- else %}
+      {{ post.date | readableDate }}
+      {%- endif %}&nbsp;
+    {% if post.data.categories.length > 0 %}
+      in
+      {% for cat in post.data.categories %}
+        <a href="/categories/{{ cat | slugify }}">{{ cat }}</a>
+        {%- unless forloop.last %},
+        {% endunless %}
+      {% endfor %}
+    {% endif %}
+    {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
+  </article>
+  <hr class="major" />  
+{% endfor %}
 
 {% include 'pagination-nav.html' %}

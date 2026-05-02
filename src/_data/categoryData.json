@@ -2,7 +2,7 @@
   {
     "category": "Beachside",
     "count": 1,
-    "description": "",
+    "description": "Highlights beachside restaurants.",
     "imageFilePath": "",
     "imageAltText": "",
     "imageAttribution": ""
@@ -10,7 +10,7 @@
   {
     "category": "Cooking",
     "count": 1,
-    "description": "",
+    "description": "Highlights cooking-related content.",
     "imageFilePath": "",
     "imageAltText": "",
     "imageAttribution": ""
@@ -18,7 +18,7 @@
   {
     "category": "Uncategorized",
     "count": 9,
-    "description": "",
+    "description": "Posts without an assigned category.",
     "imageFilePath": "",
     "imageAltText": "",
     "imageAttribution": ""

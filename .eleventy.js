@@ -95,6 +95,7 @@ export default async function (eleventyConfig) {
 		}
 	});
 
+	// Make sure all the files we need are deployed with the site
 	eleventyConfig.addPassthroughCopy({ 'src/favicon/*': '/' });
 	[
 		'src/_data/',
@@ -103,6 +104,7 @@ export default async function (eleventyConfig) {
 		eleventyConfig.addPassthroughCopy(path);
 	});
 
+	// What do we want the source code to look like?
 	if (isProduction) {
 		// Only minify HTML if we are in production
 		eleventyConfig.addTransform('txHtmlMinify', htmlMinify);
