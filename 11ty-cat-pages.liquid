@@ -3,7 +3,7 @@ layout: generic
 pagination:
   data: collections.articlesByTimestamp
   size: 20
-  alias: catposts
+  alias: posts
 category: 
 description: 
 eleventyComputed:
@@ -11,32 +11,28 @@ eleventyComputed:
 permalink: "categories/{{ category | slugify }}/{% if pagination.pageNumber != 0 %}page-{{ pagination.pageNumber }}/{% endif %}"
 ---
 
+<p>{{ description }} This page lists category posts in reverse chronological order.</p>
+
 {% include 'pagination-count.html' %}
-
-<p>{{ description }}&nbsp;This page lists all posts in the category, in reverse chronological order.</p>
-
 <hr class="major" />
-{% for post in catposts %}
+{% for post in posts %}
   <article>
     <h4>
-      <a href="{{post.url}}" style="cursor: pointer">{{ post.data.title }}</a>
-    </h4>
-    Posted {%- if post.data.timestamp %}
-      {{ post.data.timestamp | readableTimestamp }}
+      {%- if post.data.isLocation %}
+        <a href="{{ post.url }}" style="cursor: pointer">Review: {{ post.data.title }}</a>
       {%- else %}
+        <a href="{{ post.url }}" style="cursor: pointer">{{ post.data.title }}</a>
+      {%- endif %}
+    </h4>    
+    <strong>Posted:</strong>&nbsp;
+    {%- if post.data.timestamp %}
+      {{ post.data.timestamp | readableTimestamp }}
+    {%- else %}
       {{ post.date | readableDate }}
-      {%- endif %}&nbsp;
-    {% if post.data.categories.length > 0 %}
-      in
-      {% for cat in post.data.categories %}
-        <a href="/categories/{{ cat | slugify }}">{{ cat }}</a>
-        {%- unless forloop.last %},
-        {% endunless %}
-      {% endfor %}
-    {% endif %}
-    {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
+    {%- endif %}    
+    <br />
+     {% if post.data.description %}{{ post.data.description }}{% endif %}
   </article>
-  <hr class="major" />  
+  <hr class="major" />
 {% endfor %}
-
 {% include 'pagination-nav.html' %}

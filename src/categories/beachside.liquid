@@ -4,7 +4,7 @@
   "pagination": {
     "data": "collections.articlesByTimestamp",
     "size": 20,
-    "alias": "catposts",
+    "alias": "posts",
     "before": function(paginationData, fullData){ let data = paginationData.filter((item) => item.data.categories && item.data.categories.includes('Beachside')); return Array.from(data).sort((a, b) => { return a.date < b.date ? 1 : -1; });}
   },
   "category": "Beachside",
@@ -16,10 +16,33 @@
 }
 ---
 
+<p>{{ description }} This page lists category posts in reverse chronological order.</p>
+
 {% include 'pagination-count.html' %}
+<hr class="major" />
+{% for post in posts %}
+  <article>
+    <h4>
+      {%- if post.data.isLocation %}
+        <a href="{{ post.url }}" style="cursor: pointer">Review: {{ post.data.title }}</a>
+      {%- else %}
+        <a href="{{ post.url }}" style="cursor: pointer">{{ post.data.title }}</a>
+      {%- endif %}
+    </h4>    
+    <strong>Posted:</strong>&nbsp;
+    {%- if post.data.timestamp %}
+      {{ post.data.timestamp | readableTimestamp }}
+    {%- else %}
+      {{ post.date | readableDate }}
+    {%- endif %}    
+    <br />
+     {% if post.data.description %}{{ post.data.description }}{% endif %}
+  </article>
+  <hr class="major" />
+{% endfor %}
+{% include 'pagination-nav.html' %}
 
-<p>{{ description }}&nbsp;This page lists all posts in the category, in reverse chronological order.</p>
-
+{% comment %} {% include 'pagination-count.html' %}
 <hr class="major" />
 {% for post in catposts %}
   <article>
@@ -44,4 +67,4 @@
   <hr class="major" />  
 {% endfor %}
 
-{% include 'pagination-nav.html' %}
+{% include 'pagination-nav.html' %} {% endcomment %}
