@@ -14,15 +14,23 @@ With Google Maps, you can feed it a data file with latitude and longitude values
 Recommend adding long and lat values to post front matter and generating the file during the build process. 
 Map page loads the data file from the server and passes it to the Google Maps API.
 
+**Generating Latitude & Longitude**
+
 Use the `geocoder` command in the terminal to calculate latitude and longitude from an address
 
 ``` shell
 geocoder <restaurant_address>
 ```
 
+**Home Page Image Dimensions**
+
++ 416 x 256
+
 ## Tasks
 
+- [ ] Higher image breakfast plate image
 - [ ] Fix image scaling, size them for mobile
+- [ ] Navigation
 - [ ] Home Page
   - [x] Section images
   - [ ] Page content
