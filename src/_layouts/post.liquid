@@ -47,11 +47,10 @@ layout: base
     {%- endif %}
     {{ content }}
     </article>
-    <hr />
     {% if nextPost %}
-      <p>Next Post: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></p>
+      <a onClick="location.href='{{ nextPost.url }}'" class="button primary">&lt;&lt;&nbsp;{{ nextPost.data.title }}</a>
     {% endif %}
     {% if previousPost %} 
-      <p>Previous Post: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+      <a onClick="location.href='{{ previousPost.url }}'" class="button primary">{{ previousPost.data.title }}&nbsp;&gt;&gt</a>      
   {% endif %}
 </section>
