@@ -2,7 +2,7 @@
   TZ = "America/New_York"
 
 [[headers]]
-  for = "/api/*.json" # Apply to all JSON files
+  for = "/*.json"
   [headers.values]
     Access-Control-Allow-Origin = "*"
 
