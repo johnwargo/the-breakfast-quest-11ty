@@ -1,13 +1,13 @@
 ---
-title: East 74 Diner
+title: East 74 Restaurant
 description: 
 date: 2026-05-01
 timestamp: 2025-01-05T17:26:38.617Z
 isLocation: true
 visitDate: 2025-01-04
 rating: 
-website: 
-address: 
+website: https://east74restaurant.com/menu/
+address: 10915 Monroe Rd, Matthews, NC 28105
 city: Charlotte
 state: North Carolina
 latitude: 

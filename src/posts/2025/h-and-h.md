@@ -1,15 +1,15 @@
 ---
-title: H & H Restaurant
+title: H&H Soul Food
 description: 
 date: 2025-11-01
 timestamp: 2025-11-01T17:32:10.275Z
 isLocation: true
 visitDate: 
 rating: 
-website: 
-address: 
-city: 
-state: 
+website: https://www.handhsoulfood.com/
+address: 807 Forsyth St, Macon, GA 31201
+city: Macon
+state: Georgia
 latitude: 
 longitude: 
 categories: 

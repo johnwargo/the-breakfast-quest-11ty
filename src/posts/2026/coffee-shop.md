@@ -7,9 +7,9 @@ isLocation: true
 visitDate: 
 rating: 
 website: 
-address: 
-city: 
-state: 
+address: 385 W Main St, Sylva, NC 28779
+city: Sylva
+state: North Carolona
 latitude: 
 longitude: 
 categories: 

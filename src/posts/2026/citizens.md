@@ -1,5 +1,5 @@
 ---
-title: Citizens Kitchen & Bar
+title: Citizen's Kitchen & Bar
 description: 
 date: 2026-04-30
 timestamp: 2026-04-30T23:31:54.045Z
