@@ -39,8 +39,7 @@ geocoder <restaurant_address>
   - [x] By Visit date
   - [ ] By State (collapsed) or perhaps city?
 - [ ] Review Page
-  - [ ] Link address to Google Maps
-  - [ ] Post page, display map to the location
+  - [x] Link address to Google Maps
   - [ ] Post page, display rating as stars
 - [ ] Locations page
   - [ ] Make PWA and cache locations data locally
