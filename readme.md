@@ -40,7 +40,7 @@ geocoder <restaurant_address>
   - [ ] By State (collapsed) or perhaps city?
 - [ ] Review Page
   - [x] Link address to Google Maps
-  - [ ] Post page, display rating as stars
+- [ ] Post page, display rating as stars
 - [ ] Locations page
   - [ ] Make PWA and cache locations data locally
 - [ ] Application icon

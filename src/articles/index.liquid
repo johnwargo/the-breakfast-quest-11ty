@@ -25,7 +25,10 @@ pagination:
       {%- else %}
         <a href="{{ post.url }}" style="cursor: pointer">{{ post.data.title }}</a>
       {%- endif %}
-    </h4>    
+    </h4>
+    {%- if post.data.city and post.data.state %}
+      <strong>Location:</strong> {{ post.data.city }}, {{ post.data.state }}<br />
+    {%- endif %}
     <strong>Posted:</strong>&nbsp;
     {%- if post.data.timestamp %}
       {{ post.data.timestamp | readableTimestamp }}
