@@ -1,6 +1,11 @@
 [build.environment]
   TZ = "America/New_York"
 
+[[headers]]
+  for = "/api/*.json" # Apply to all JSON files
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+
 [[plugins]]
 package = "netlify-plugin-cache"
   [plugins.inputs]

@@ -5,7 +5,7 @@ const locationData = 'https://breakfastquest.netlify.app/api/locations.json';
     console.log('Initialized maps.js');
 
     // fetch the locations file/data
-    fetch(locationData)
+    fetch(locationData, { mode: 'no-cors' })
         // convert the response to JSON
         .then(response => response.json())
         .then(locations => {
@@ -17,5 +17,4 @@ const locationData = 'https://breakfastquest.netlify.app/api/locations.json';
             map.data.loadGeoJson(locations);
         })
         .catch(error => console.error("Error loading locations:", error));
-
 })();
