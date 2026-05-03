@@ -10,8 +10,8 @@ website: https://tacobilly.com/
 address: 201 Haywood Rd, Asheville, NC 28806
 city: Asheville
 state: North Carolina
-latitude: 
-longitude: 
+latitude: 35.5801214
+longitude: -82.57448649999999 
 categories: 
 ---
 

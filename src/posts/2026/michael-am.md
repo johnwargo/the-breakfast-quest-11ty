@@ -10,8 +10,8 @@ website:
 address: 1562 Akron Peninsula Rd, Akron, OH 44313
 city: Akron
 state: Ohio
-latitude: 
-longitude: 
+latitude: 41.1373697
+longitude: -81.54848129999999
 categories: 
 ---
 

@@ -10,8 +10,8 @@ website: https://www.handhsoulfood.com/
 address: 807 Forsyth St, Macon, GA 31201
 city: Macon
 state: Georgia
-latitude: 
-longitude: 
+latitude: 32.83581210000001
+longitude: -83.6348222
 categories: 
 ---
 

@@ -10,8 +10,8 @@ website: https://east74restaurant.com/menu/
 address: 10915 Monroe Rd, Matthews, NC 28105
 city: Charlotte
 state: North Carolina
-latitude: 
-longitude: 
+latitude: 35.1256891
+longitude: -80.72928069999999
 categories: 
 ---
 
