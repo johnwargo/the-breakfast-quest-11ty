@@ -2,9 +2,9 @@
 title: East 74 Diner
 description: 
 date: 2026-05-01
-timestamp: 2026-05-01T17:26:38.617Z
+timestamp: 2025-01-05T17:26:38.617Z
 isLocation: true
-visitDate: 
+visitDate: 2025-01-04
 rating: 
 website: 
 address: 

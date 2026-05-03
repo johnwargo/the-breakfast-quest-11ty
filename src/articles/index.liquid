@@ -15,6 +15,7 @@ pagination:
 <p>This page lists all articles in reverse chronological order. Use the <a href="/categories/">Categories</a> page to view the list of categories.</p>
 
 {% include 'pagination-count.html' %}
+
 <hr class="major" />
 {% for post in posts %}
   <article>
@@ -42,4 +43,5 @@ pagination:
   </article>
   <hr class="major" />
 {% endfor %}
+
 {% include 'pagination-nav.html' %}
