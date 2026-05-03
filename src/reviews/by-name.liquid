@@ -24,6 +24,9 @@ pagination:
       <h4>
         <a href="{{ review.url }}" style="cursor: pointer">{{ review.data.title }}</a>
       </h4>
+      {%- if review.data.city and review.data.state %}
+        <strong>Location:</strong> {{ review.data.city }}, {{ review.data.state }}<br />
+      {%- endif %}
       <strong>Posted:</strong>&nbsp; 
         {%- if review.data.timestamp %}
           {{ review.data.timestamp | readableTimestamp }}
