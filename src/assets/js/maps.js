@@ -39,13 +39,13 @@ function initMap() {
 		infowindow.open(map);
 	});
 
-	map.data.addListener('click', function(event) {
-    const url = event.feature.getProperty('url');
-    if (url) {	// this should always be true
+	map.data.addListener('click', function (event) {
+		const url = event.feature.getProperty('url');
+		if (url) {	// this should always be true
 			// open the website in a new tab
 			window.open(url, '_blank');
 		}
-});
+	});
 
 }
 

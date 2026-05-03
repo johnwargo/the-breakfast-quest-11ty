@@ -19,7 +19,7 @@ Map page loads the data file from the server and passes it to the Google Maps AP
 Use the `geocoder` command in the terminal to calculate latitude and longitude from an address
 
 ``` shell
-geocoder <restaurant_address>
+geocoder "<restaurant_address>"
 ```
 
 **Home Page Image Dimensions**
