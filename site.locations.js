@@ -60,27 +60,43 @@ export default async function (eleventyConfig, options = {}) {
       // loop through the posts, adding the location data to the locations array
       for (let post of posts) {
         if (post.data.isLocation) {
+          if (post.data.latitude == null || post.data.longitude == null) {
+            log.warn(`Post "${post.data.title}" is missing latitude or longitude`);
+            continue;
+          }
+          // https://geojson.org/
           let locRecord = {
-            name: post.data.title,
-            latitude: post.data.latitude,
-            longitude: post.data.longitude
+            type: 'Feature',
+            geometry: {
+              type: 'Point',
+              coordinates: [post.data.longitude, post.data.latitude]
+            },
+            properties: {
+              name: post.data.title
+            }
           }
           locations.push(locRecord);
         }
       }
+      // sort the locations list by name
+      locations.sort((a, b) => a.properties.name.localeCompare(b.properties.name));
+      // console.dir(locations);
+
     } else {
       log.info(`No locations found in tag(s): ${tags.join(', ')}`);
     }
 
-    // sort the locations list by name
-    locations.sort((a, b) => a.name.localeCompare(b.name));
+    // Add the features to the result object
+    var result = {};
+    result.type = "FeatureCollection";
+    result.features = locations;
 
     log.debug(`Writing location data to ${outputFilePath}`);
     try {
       // Create the target folder (if it doesn't exist)
       fs.mkdirSync(outputFolderPath, { recursive: true });
       // write the locations object to the output file
-      fs.writeFileSync(outputFilePath, JSON.stringify(locations, null, 2));
+      fs.writeFileSync(outputFilePath, JSON.stringify(result, null, 2));
     } catch (err) {
       log.error(`Error writing location data: ${err}`);
       process.exit(1);
@@ -89,7 +105,7 @@ export default async function (eleventyConfig, options = {}) {
     log.info(`Location data written to ${outputFilePath}`);
     console.timeEnd(durationStr);
     // Return empty array so "collections.internal_hidden_capture" is effectively empty
-    return [];
+    return result;
   });
 
 
