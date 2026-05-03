@@ -72,7 +72,9 @@ export default async function (eleventyConfig, options = {}) {
               coordinates: [post.data.longitude, post.data.latitude]
             },
             properties: {
-              name: post.data.title
+              name: post.data.title,
+              description: post.data.description,
+              url: post.url
             }
           }
           locations.push(locRecord);
