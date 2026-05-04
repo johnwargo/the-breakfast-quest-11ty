@@ -1,7 +1,7 @@
 <div id="sidebar">
   <div class="inner">
     <section id="search" class="alt">
-      <form method="post" action="#">
+      <form onsubmit="handleSearch(event)">
         <input type="text" name="query" id="query" placeholder="Search" />
       </form>
     </section>
@@ -25,3 +25,4 @@
 		{% include "footer.html" %}
   </div>
 </div>
+<script src="/assets/js/search-sidebar.js"></script>
