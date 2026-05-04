@@ -45,6 +45,7 @@ geocoder "<restaurant_address>"
   - [ ] Make PWA and cache locations data locally
 - [ ] Application icon
 - [ ] Setup info@ email address
+- [ ] Google Analytics
 - [ ] Algolia index
 - [ ] Search
 - [ ] Contact form
