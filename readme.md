@@ -1,3 +1,5 @@
+![Site home page](images/home-page-short.png)
+
 # The Breakfast Quest
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d2459447-19e0-4037-8fd1-12cbbf173fa0/deploy-status)](https://app.netlify.com/projects/breakfastquest/deploys)
