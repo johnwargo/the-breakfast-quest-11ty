@@ -67,7 +67,7 @@ await $`npm run build`;
 
 if (updateIndex) {
   console.log('\nUpdating Algolia Index');
-  await $`algolia-idxup _site/algolia.json ${algoliaPrefix} -f ../algolia-creds.json`;
+  await $`algolia-idxup _site/algolia.json ${algoliaPrefix} -d -f ../algolia-creds.json`;
 }
 
 await $`git add -A`;
