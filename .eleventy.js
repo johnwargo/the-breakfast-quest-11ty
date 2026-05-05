@@ -55,10 +55,10 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addCollection('reviewsByName', collectionAPI => {
 		return collectionAPI.getFilteredByTag('post').filter(post => post.data.isLocation)
 			.sort((a, b) => {
-      let titleA = a.data.title || "";
-      let titleB = b.data.title || "";
-      return titleB.localeCompare(titleA);
-    });
+				let titleA = a.data.title || "";
+				let titleB = b.data.title || "";
+				return titleB.localeCompare(titleA);
+			});
 	});
 
 	eleventyConfig.addCollection('articlesByTimestamp', collectionAPI => {
@@ -83,6 +83,15 @@ export default async function (eleventyConfig) {
 			minute: '2-digit'
 		};
 		return theDate.toLocaleString(locale, options);
+	});
+
+	eleventyConfig.addFilter('algExcerpt', function (text) {
+		//first remove code
+		text = text.replace(/<code class="language-.*?">.*?<\/code>/sg, '');
+		//now remove html tags
+		text = text.replace(/<.*?>/g, '');
+		//now limit to 5k
+		return text.substring(0, 5000);
 	});
 
 	eleventyConfig.addShortcode('GetKeywords', categories => {
