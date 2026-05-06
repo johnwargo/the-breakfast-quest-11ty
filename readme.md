@@ -68,7 +68,7 @@ geocoder "<restaurant_address>"
 - [ ] Search page
   - [ ] Put button at the end of the input field
   - [ ] Shorten input field
-- [ ] 
+- [ ] Style FAQ Q and A
 - [ ] 
 - [ ] 
 - [ ] 
