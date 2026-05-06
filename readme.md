@@ -28,38 +28,27 @@ geocoder "<restaurant_address>"
 
 ## Tasks
 
-- [ ] Higher resolution breakfast plate image
+- [ ] All pages (not only posts) content in the index
 - [ ] Home Page content
 - [ ] About page content
-- [ ] Site page content/stats
-- [ ] Add page (not post) content to the index
-- [ ] Reviews 
-  - [x] By Restaurant name
-  - [x] By Visit date
-  - [ ] By State (collapsed) or perhaps city?
-- [ ] Post page, display rating as stars
 - [ ] Application icon
-- [ ] Setup info@ email address
 - [ ] Contact form
-  - [ ] Use third party service (?)
-  - [ ] Contact form **Reset** button
-  - [ ] Contact form **Send** button
-- [ ] Newsletter
-  - [ ] Newsletter sign-up in sidebar
-  - [ ] Delete About menu item
-- [x] Google Analytics
-- [x] Algolia index
-- [x] Search
-- [x] Review Page
-  - [x] Link address to Google Maps
+- [ ] Higher resolution breakfast plate image
+- [ ] Site page content/stats
 - [ ] 
 - [ ] 
 
 ## Post Launch
 
+- [ ] Business cards
+- [ ] Newsletter
+  - [ ] Newsletter sign-up in sidebar
+  - [ ] Delete About menu item
 - [ ] Home Page: Top 10 popular posts listing
 - [ ] Most popular articles page
+- [ ] Rating
 - [ ] Locations page: Make PWA and cache locations data locally
+- [ ] Reviews by state or city?
 
 
 ## Scott Tasks
