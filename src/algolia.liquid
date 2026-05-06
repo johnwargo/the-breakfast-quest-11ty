@@ -7,8 +7,7 @@ eleventyExcludeFromCollections: true
   {%- assign comma = "" %}
   {%- for item in collections.all %}
   {%- unless item.url == page.url or item.data.excludeFromSearch or item.url == false %}
-    {{ comma }}
-    {
+    {{ comma }}{
       "objectID": {{ item.url | json }},
       "title": {{ item.data.title | default: item.fileSlug | json }},
       "date": "{{ item.date }}",
