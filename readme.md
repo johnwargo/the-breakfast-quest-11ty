@@ -26,9 +26,13 @@ geocoder "<restaurant_address>"
 
 + 416 x 256
 
+## Indexing
+
+`eleventyExcludeFromCollections: true` keeps a page out of the index
+
 ## Tasks
 
-- [ ] All pages (not only posts) content in the index
+- [x] All pages (not only posts) content in the index
 - [ ] Home Page content
 - [ ] About page content
 - [ ] Application icon
