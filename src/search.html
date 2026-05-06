@@ -4,11 +4,12 @@ title: Search
 description:
 ---
 
-<form onsubmit="doSearch(event)">
-  <input type="text" id="queryInput" placeholder="Search..." />
-</form>
+<section>
+  <form onsubmit="doSearch(event)">
+    <input type="text" id="queryInput" placeholder="Search..." />
+  </form>
+  <div id="searchResults"></div>
+</section>
 
-<div id="searchResults"></div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/5.39.0/algoliasearch.umd.min.js" integrity="sha512-IyvLgy3tdE0vbF+2QkTcRk778rQBWvrjavkrpnwTRkVpwocc4YrIvkHgTUwBXw+qSaLDJKsxCQsZiHDMau3KNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@5/dist/lite/builds/browser.umd.js"></script>
 <script src="/assets/js/search-page.js"></script>

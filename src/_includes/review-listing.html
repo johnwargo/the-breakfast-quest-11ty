@@ -1,0 +1,25 @@
+<article>
+  <h4>
+    <a href="{{ review.url }}" style="cursor: pointer">{{ review.data.title }}</a>
+  </h4>
+  {%- if review.data.city and review.data.state %}
+    <strong>Location:</strong> {{ review.data.city }}, {{ review.data.state }}<br />
+  {%- endif %}
+  <strong>Posted:</strong>&nbsp;
+  {%- if review.data.timestamp %}
+    {{ review.data.timestamp | readableTimestamp }}
+  {%- else %}
+    {{ review.date | readableDate }}
+  {%- endif %}
+  {%- if review.data.categories.length > 0 %}&nbsp;in&nbsp;
+    {%- for cat in review.data.categories %}
+      <a href="/categories/{{ cat | slugify }}">{{ cat }}</a>
+      {%- unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  {% endif %}
+  <br />
+  {%- if review.data.visitDate.length > 0 %}<strong>Visits:</strong>&nbsp;{{ review.data.visitDate.length }}<br />{%-
+  endif %}
+  {% if review.data.description %}{{ review.data.description }}{% endif %}
+</article>
+<hr class="major" />
