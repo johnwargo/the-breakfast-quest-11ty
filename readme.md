@@ -29,20 +29,15 @@ geocoder "<restaurant_address>"
 ## Tasks
 
 - [ ] Higher resolution breakfast plate image
-- [x] Navigation
-- [ ] Home Page
-  - [x] Section images
-  - [ ] Page content
-- [ ] About page content
+- [ ] Home Page content
+  [ ] About page content
 - [ ] Reviews 
   - [x] By Restaurant name
   - [x] By Visit date
   - [ ] By State (collapsed) or perhaps city?
-- [ ] Review Page
+- [x] Review Page
   - [x] Link address to Google Maps
 - [ ] Post page, display rating as stars
-- [ ] Locations page
-  - [ ] Make PWA and cache locations data locally
 - [ ] Application icon
 - [ ] Setup info@ email address
 - [ ] Google Analytics
@@ -57,16 +52,13 @@ geocoder "<restaurant_address>"
   - [ ] Delete About menu item
 - [ ] 
 - [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
 
 ## Post Launch
 
 - [ ] Home Page: Top 10 popular posts listing
 - [ ] Most popular articles page
+- [ ] Locations page: Make PWA and cache locations data locally
+
 
 ## Scott Tasks
 
