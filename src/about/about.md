@@ -1,8 +1,8 @@
 ---
-title: About This Site
+title: About Us
 layout: generic
 eleventyNavigation:
-  key: About This Site
+  key: About Us
   parent: About
   order: 1
   url: /about/

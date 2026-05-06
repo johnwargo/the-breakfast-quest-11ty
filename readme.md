@@ -30,7 +30,9 @@ geocoder "<restaurant_address>"
 
 - [ ] Higher resolution breakfast plate image
 - [ ] Home Page content
-  [ ] About page content
+- [ ] About page content
+- [ ] Site page content/stats
+- [ ] Add page (not post) content to the index
 - [ ] Reviews 
   - [x] By Restaurant name
   - [x] By Visit date
