@@ -43,6 +43,15 @@ export default async function (eleventyConfig) {
 		imageClass: 'image fit'
 	});
 
+	eleventyConfig.addCollection('articlesByTimestamp', collectionAPI => {
+		return collectionAPI.getFilteredByTag('post').sort((a, b) => {
+			// use the timestamp if we have it, otherwise date
+			var aDate = a.data.timestamp ? new Date(a.data.timestamp) : new Date(a.date);
+			var bDate = b.data.timestamp ? new Date(b.data.timestamp) : new Date(b.date);
+			return aDate - bDate;
+		});
+	});
+
 	eleventyConfig.addCollection('reviewsByTimestamp', collectionAPI => {
 		return collectionAPI.getFilteredByTag('post').filter(post => post.data.isLocation)
 			.sort((a, b) => {
@@ -59,15 +68,6 @@ export default async function (eleventyConfig) {
 				let titleB = b.data.title || "";
 				return titleB.localeCompare(titleA);
 			});
-	});
-
-	eleventyConfig.addCollection('articlesByTimestamp', collectionAPI => {
-		return collectionAPI.getFilteredByTag('post').sort((a, b) => {
-			// use the timestamp if we have it, otherwise date
-			var aDate = a.data.timestamp ? new Date(a.data.timestamp) : new Date(a.date);
-			var bDate = b.data.timestamp ? new Date(b.data.timestamp) : new Date(b.date);
-			return aDate - bDate;
-		});
 	});
 
 	eleventyConfig.addFilter('readableTimestamp', function (dateVal, locale = 'en-us') {
@@ -90,6 +90,10 @@ export default async function (eleventyConfig) {
 		text = text.replace(/<code class="language-.*?">.*?<\/code>/sg, '');
 		//now remove html tags
 		text = text.replace(/<.*?>/g, '');
+		// remove carriage returns
+		text = text.replace(/\r\n|\r|\n/g, ' ');
+		// remove extra spaces
+		text = text.replace(/[ ]{2,}/g, ' ');
 		//now limit to 5k
 		return text.substring(0, 5000);
 	});

@@ -1,8 +1,26 @@
 ---
 permalink: /algolia.json
+eleventyExcludeFromCollections: true
 ---
 
-{% assign posts = collections.post | reverse %}
+[{%- for item in collections.all %}
+  {%- unless item.url == page.url or item.data.excludeFromSearch or item.url == false %}
+    {
+      "objectID": {{ item.url | json }},
+      "title": {{ item.data.title | default: item.fileSlug | json }},
+      "date": "{{ item.date }}",
+      "date_timestamp": {{ item.date | date: "%s" }},
+      "url": {{ item.url | prepend: site.url | json }},
+      "content": {{ item.templateContent | algExcerpt | json }},
+      "tags": {{ item.data.tags | default: empty | json }},
+      "categories": {{ item.data.categories | default: empty | json }}
+    }
+    {%- unless forloop.last %},{% endunless %}
+  {%- endunless %}
+{%- endfor %}]
+
+
+{% comment %} {% assign posts = collections.post | reverse %}
 [
 {% for post in posts %}
   {
@@ -23,4 +41,4 @@ permalink: /algolia.json
   ]
   }{% unless forloop.last %},{% endunless %}
 {% endfor %}
-]
+] {% endcomment %}
