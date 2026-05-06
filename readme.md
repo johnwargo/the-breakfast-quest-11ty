@@ -73,7 +73,9 @@ geocoder "<restaurant_address>"
 - [ ] Newsletter form
   - [ ] Narrow input fields
   - [ ] Suck up space above the form
-- [ ] 
+- [ ] Search page
+  - [ ] Put button at the end of the input field
+  - [ ] Shorten input field
 - [ ] 
 - [ ] 
 - [ ] 
