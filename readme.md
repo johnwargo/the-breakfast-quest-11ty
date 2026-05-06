@@ -35,14 +35,9 @@ geocoder "<restaurant_address>"
   - [x] By Restaurant name
   - [x] By Visit date
   - [ ] By State (collapsed) or perhaps city?
-- [x] Review Page
-  - [x] Link address to Google Maps
 - [ ] Post page, display rating as stars
 - [ ] Application icon
 - [ ] Setup info@ email address
-- [ ] Google Analytics
-- [x] Algolia index
-- [x] Search
 - [ ] Contact form
   - [ ] Use third party service (?)
   - [ ] Contact form **Reset** button
@@ -50,6 +45,11 @@ geocoder "<restaurant_address>"
 - [ ] Newsletter
   - [ ] Newsletter sign-up in sidebar
   - [ ] Delete About menu item
+- [x] Google Analytics
+- [x] Algolia index
+- [x] Search
+- [x] Review Page
+  - [x] Link address to Google Maps
 - [ ] 
 - [ ] 
 
