@@ -3,7 +3,9 @@ permalink: /algolia.json
 eleventyExcludeFromCollections: true
 ---
 
-[{%- for item in collections.all %}
+[
+  {%- assign comma = "" %}
+  {%- for item in collections.all %}
   {%- unless item.url == page.url or item.data.excludeFromSearch or item.url == false %}
     {
       "objectID": {{ item.url | json }},
@@ -15,7 +17,8 @@ eleventyExcludeFromCollections: true
       "tags": {{ item.data.tags | default: empty | json }},
       "categories": {{ item.data.categories | default: empty | json }}
     }
-    {%- unless forloop.last %},{% endunless %}
+    {%- assign comma = "," %}
+    {% comment %} {%- unless forloop.last %},{% endunless %} {% endcomment %}
   {%- endunless %}
 {%- endfor %}]
 
