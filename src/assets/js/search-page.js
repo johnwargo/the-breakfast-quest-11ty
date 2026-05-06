@@ -17,7 +17,16 @@ async function doSearch(evt) {
 
 		const results = document.querySelector("#searchResults");
 		results.innerHTML = hits
-			.map((hit) => `<article><h4><a href="${hit.url}">${hit.title || hit.name || hit.objectID}</a></h4></article>`)
+			.map((hit) => {
+				var res = '<article><h4>';
+				res += `<a href="${hit.url}" style="cursor: pointer">${hit.title || hit.name || hit.objectID}</a>`;
+				res += '</h4>';
+				res += `<strong>Posted:</strong>&nbsp;${hit.date}</br />`;
+				// TODO: Loop through categories
+				res += `${hit.content}<br />`;
+				res += '</article><hr class="major" />';
+				return res;
+			})
 			.join("");
 	}
 };

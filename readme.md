@@ -46,8 +46,8 @@ geocoder "<restaurant_address>"
 - [ ] Application icon
 - [ ] Setup info@ email address
 - [ ] Google Analytics
-- [ ] Algolia index
-- [ ] Search
+- [x] Algolia index
+- [x] Search
 - [ ] Contact form
   - [ ] Use third party service (?)
   - [ ] Contact form **Reset** button
