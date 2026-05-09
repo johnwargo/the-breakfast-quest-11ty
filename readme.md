@@ -33,18 +33,18 @@ geocoder "<restaurant_address>"
 ## Tasks
 
 - [x] All pages (not only posts) content in the index
-- [ ] Home Page content
+- [x] Home Page content
 - [ ] About page content
 - [ ] Application icon
 - [ ] Contact form
 - [ ] Higher resolution breakfast plate image
-- [ ] Site page content/stats
 - [ ] 
 - [ ] 
 
 ## Post Launch
 
 - [ ] Business cards
+- [ ] Site page content/stats
 - [ ] Newsletter
   - [ ] Newsletter sign-up in sidebar
   - [ ] Delete About menu item
