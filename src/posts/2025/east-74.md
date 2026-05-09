@@ -1,5 +1,5 @@
 ---
-title: East 74 Restaurant
+title: East 74 Family Restaurant
 description: 
 date: 2026-05-01
 timestamp: 2025-01-05T17:26:38.617Z
