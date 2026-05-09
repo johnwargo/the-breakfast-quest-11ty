@@ -1,12 +1,12 @@
 ---
 permalink: /algolia.json
-eleventyExcludeFromCollections: true
+idxIgnore: true
 ---
 
 [
   {%- assign comma = "" %}
   {%- for item in collections.all %}
-  {%- unless item.url == page.url or item.data.excludeFromSearch or item.url == false %}
+  {%- unless item.url == page.url or item.data.idxIgnore or item.url == false %}
     {{ comma }}{
       "objectID": {{ item.url | json }},
       "title": {{ item.data.title | default: item.fileSlug | json }},

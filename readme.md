@@ -28,7 +28,7 @@ geocoder "<restaurant_address>"
 
 ## Indexing
 
-`eleventyExcludeFromCollections: true` keeps a page out of the index
+`idxIgnore: true` keeps a page out of the index
 
 ## Tasks
 

@@ -9,7 +9,7 @@ description:
 eleventyComputed:
   title: "{{ category }}"
 permalink: "categories/{{ category | slugify }}/{% if pagination.pageNumber != 0 %}page-{{ pagination.pageNumber }}/{% endif %}"
-eleventyExcludeFromCollections: true
+idxIgnore: true
 ---
 
 <p>{{ description }} This page lists category posts in reverse chronological order.</p>
