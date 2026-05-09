@@ -2,16 +2,15 @@
 layout: generic
 title: Articles & Reviews
 description: All articles in reverse chronological order.
+idxIgnore: true
 eleventyNavigation:
   key: Articles
   order: 2
-  url: /posts/
 pagination:
   data: collections.articlesByTimestamp
   size: 20
   alias: posts
   reverse: true
-idxIgnore: true
 ---
 
 <p>This page lists all articles in reverse chronological order. Use the <a href="/categories/">Categories</a> page to view the list of categories.</p>
