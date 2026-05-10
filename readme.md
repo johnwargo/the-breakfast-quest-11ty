@@ -36,11 +36,15 @@ geocoder "<restaurant_address>"
 - [x] Home Page content
 - [x] About page content
 - [x] Post allow multiple visit dates
-- [ ] Application icon
+- [x] Application icon
 - [ ] Contact form
 - [ ] Higher resolution breakfast plate image
 - [ ] 
 - [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+
 
 ## Post Launch
 
