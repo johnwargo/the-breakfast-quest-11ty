@@ -16,8 +16,9 @@ We generally look for:
 + Locally owned businesses.
 + Small, quaint places; specifically ones locals likely frequent. 
 + Older restaurants
++ [John] A place with Country Fried Steak on the menu (see below)
 
-We don’t want:
+We generally don’t like:
 
 + Bigger restaurant chains 
 + Tourist traps (unless there are no other options available).

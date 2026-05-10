@@ -45,7 +45,6 @@ geocoder "<restaurant_address>"
 - [ ] 
 - [ ] 
 
-
 ## Post Launch
 
 - [ ] Business cards

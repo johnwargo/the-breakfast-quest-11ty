@@ -1,22 +1,23 @@
 {% assign navPages = collections.all | eleventyNavigation %}
 
 <nav id="menu">
+  <img src="/favicon/favicon-96x96.png" alt="Application Icon" />
+  <br /><br />
   <header class="major">
     <h2>Menu</h2>
   </header>
   <ul>
-    {%- for entry in navPages %}
-      {%- if entry.children.length > 0 %}
-        <li><span class="opener">{{ entry.title }}</span>
-        <ul>
-          {%- for child in entry.children %}
-          <li><a href="{{ child.url }}">{{ child.title }}</a></li>
-          {%- endfor %}
-        </ul>
-      </li>
-      {%- else %}
-        <li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
-      {%- endif %}
-    {%- endfor %}
+    {%- for entry in navPages %} {%- if entry.children.length > 0 %}
+    <li>
+      <span class="opener">{{ entry.title }}</span>
+      <ul>
+        {%- for child in entry.children %}
+        <li><a href="{{ child.url }}">{{ child.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </li>
+    {%- else %}
+    <li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+    {%- endif %} {%- endfor %}
   </ul>
 </nav>
