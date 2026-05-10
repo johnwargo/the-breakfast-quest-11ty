@@ -34,10 +34,14 @@ geocoder "<restaurant_address>"
 
 - [x] All pages (not only posts) content in the index
 - [x] Home Page content
-- [ ] About page content
-- [ ] Application icon
+- [x] About page content
+- [x] Post allow multiple visit dates
+- [x] Application icon
 - [ ] Contact form
 - [ ] Higher resolution breakfast plate image
+- [ ] 
+- [ ] 
+- [ ] 
 - [ ] 
 - [ ] 
 

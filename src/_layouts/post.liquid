@@ -4,7 +4,6 @@ layout: base
 
 {% assign previousPost = collections.post | getPreviousCollectionItem %}
 {% assign nextPost = collections.post | getNextCollectionItem %}
-{% comment %} <a onClick="history.back()">&lt;&lt; Back</a> {% endcomment %}
 
 <section>
   <article>
@@ -23,7 +22,17 @@ layout: base
     <br />
     {%- if isLocation%}
       {%- if visitDate %}
-        <strong>Visit Date(s):</strong> {{ visitDate | readableDate }}<br />
+        <strong>Visited:</strong>
+        {%- if visitDate.first %}
+          {% assign visits = visitDate | sort %}
+          {% for visit in visits | reverse %}
+            {{ visit | readableDate  }}
+            {%- unless forloop.last %},{% endunless %}
+          {%- endfor %}
+        {%-  else %}
+          {{ visitDate | readableDate }}
+        {%- endif %}
+        <br />
       {% endif %}
       {%- if rating %}
         <strong>Rating:</strong> {{ rating }}<br />
