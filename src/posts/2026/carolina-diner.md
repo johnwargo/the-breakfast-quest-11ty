@@ -10,7 +10,7 @@ website: https://carolinasdiner.com/
 address: 5605 W Friendly Ave E, Greensboro, NC 27410
 city: Greensboro
 state: North Carolina
-latitude: 
-longitude: 
+latitude: 36.0888207
+longitude: -79.8853606
 categories: 
 ---
