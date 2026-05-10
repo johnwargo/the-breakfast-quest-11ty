@@ -3,6 +3,7 @@ title:
 description: 
 date: 
 timestamp:
+Author: 
 isLocation: true
 visitDate:
 rating: 
