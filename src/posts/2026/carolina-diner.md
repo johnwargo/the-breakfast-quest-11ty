@@ -14,3 +14,7 @@ latitude: 36.0888207
 longitude: -79.8853606
 categories: 
 ---
+
+Traditional diner.  Comfort food 
+Hand made country fried steak. Too thick, too much meat flavor 
+Hash browns perfect 
