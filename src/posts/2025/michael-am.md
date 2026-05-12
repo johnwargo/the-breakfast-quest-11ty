@@ -2,6 +2,7 @@
 title: Michael's AM
 description: 
 date: 2025-01-02
+Author: John
 isLocation: true
 visitDate: 2025-01-02
 rating: 
@@ -12,7 +13,6 @@ state: Ohio
 latitude: 41.1373697
 longitude: -81.54848129999999
 categories: 
-Author: John
 ---
 
 Michael's AM is a traditional breakfast and lunch restaurant located in the Cuyahoga River Valley between Cuyahoga Falls and Akron, Ohio. Nestled at the three-way junction of Akron-Penninsula, West Portage Trail, and North Portage Path roads, it's easy to get to from Bath, Revere, Akron, and Cuyahoga Falls. It is in a river valley, so in bad weather (especially snow) it may be a treacherous drive.
