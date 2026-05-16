@@ -37,6 +37,7 @@ geocoder "<restaurant_address>"
 - [x] About page content
 - [x] Post allow multiple visit dates
 - [x] Application icon
+- [ ] Add menu link to location post
 - [ ] Contact form
 - [ ] Higher resolution breakfast plate image
 - [ ] 

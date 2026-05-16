@@ -3,11 +3,12 @@ title:
 description: 
 date: 
 timestamp:
-Author: 
+author: 
 isLocation: true
 visitDate:
 rating: 
 website:
+menu: 
 address:
 city: 
 state:

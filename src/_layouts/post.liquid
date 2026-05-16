@@ -40,6 +40,9 @@ layout: base
       {%- if website %}
         <strong>Web site:</strong> <a href="{{ website }}" target="_blank">{{ website }}</a><br />
       {% endif %}
+      {%- if menu %}
+        <strong>Menu:</strong> <a href="{{ menu }}" target="_blank">{{ menu }}</a><br />
+      {% endif %}      
       {%- if address %}
         <strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&query={{ address | url_encode }}" target="_blank">{{ address }}</a><br />
       {% endif %}

@@ -3,6 +3,6 @@ title:
 description: 
 date: 
 timestamp:
-Author: 
+author: 
 categories: []
 ---
