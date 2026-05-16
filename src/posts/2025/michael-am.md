@@ -2,6 +2,7 @@
 title: Michael's AM
 description: 
 date: 2025-01-02
+timestamp: 2025-01-02T12:00:50.976Z
 isLocation: true
 visitDate: 2025-01-02
 rating: 

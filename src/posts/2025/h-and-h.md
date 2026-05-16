@@ -1,10 +1,11 @@
 ---
 title: H&H Soul Food
 description: 
-date: 2025-11-01
-timestamp: 2025-11-01T17:32:10.275Z
+date: 2025-10-11
+timestamp: 2025-10-11T15:00:50.976Z
+Author: John
 isLocation: true
-visitDate: 
+visitDate: 2025-10-11
 rating: 
 website: https://www.handhsoulfood.com/
 address: 807 Forsyth St, Macon, GA 31201

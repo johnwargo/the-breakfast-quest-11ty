@@ -2,7 +2,7 @@
 title: The Whale's Tail Beach Bar & Grill
 description: 
 date: 2026-04-10
-timestamp: 2026-04-10T16:22:59.352Z
+timestamp: 2026-04-10T15:00:59.352Z
 visitDate: 2026-04-10
 website: https://whalestailbeachrestaurant.com/
 isLocation: true
