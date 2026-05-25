@@ -63,19 +63,9 @@ geocoder "<restaurant_address>"
 
 ## Scott Tasks
 
-- [ ] Home Nav icon position
 - [ ] Search page
   - [ ] Put button at the end of the input field
-  - [ ] Shorten input field
 - [ ] Style FAQ Q and A
-- [ ] Style listviews
-- [ ] Contact form
-- [ ] Newsletter form
-  - [ ] Narrow input fields
-  - [ ] Suck up space above the form
-- [ ] 
-- [ ] 
-- [ ] 
 - [ ] 
 - [ ] 
 - [ ] 

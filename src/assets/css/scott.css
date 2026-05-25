@@ -8,3 +8,24 @@
   position: relative;
   top: -1px;
 }
+
+/* controls widths of the site's input fields */
+section.contact, .newsletter, .search {
+  width: min(600px, 100%)
+}
+
+#main > .inner > section {
+  padding-top: 2em;
+}
+
+#sidebar > .inner > .alt {
+  margin-bottom: 1.8rem;
+}
+
+p {
+  margin-bottom: 1em;  
+}
+
+hr.major {
+  margin: 2em 0;
+}
