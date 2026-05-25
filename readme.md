@@ -62,11 +62,9 @@ geocoder "<restaurant_address>"
 
 ## Scott Tasks
 
-- [ ] Home Nav icon position
 - [ ] Search page
   - [ ] Put button at the end of the input field
 - [ ] Style FAQ Q and A
-- [ ] Style listviews
 - [ ] 
 - [ ] 
 - [ ] 
