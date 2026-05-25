@@ -37,11 +37,11 @@ geocoder "<restaurant_address>"
 - [x] About page content
 - [x] Post allow multiple visit dates
 - [x] Application icon
-- [ ] Add menu link to location post
+- [ ] FAQ
+  - [ ] from JSON Data file
+  - [ ] Pagination
 - [ ] Contact form
 - [ ] Higher resolution breakfast plate image
-- [ ] 
-- [ ] 
 - [ ] 
 - [ ] 
 - [ ] 
@@ -49,17 +49,19 @@ geocoder "<restaurant_address>"
 ## Post Launch
 
 - [ ] Business cards
-- [ ] Site page content/stats
 - [ ] Newsletter
   - [ ] https://buttondown.com/
   - [ ] Newsletter sign-up in sidebar
   - [ ] Delete About menu item
+- [ ] Reviews by state or city?
 - [ ] Home Page: Top 10 popular posts listing
 - [ ] Most popular articles page
+- [ ] Site page content/stats
 - [ ] Rating
 - [ ] Locations page: Make PWA and cache locations data locally
-- [ ] Reviews by state or city?
-
+- [ ] 
+- [ ] 
+- [ ] 
 
 ## Scott Tasks
 
@@ -76,8 +78,6 @@ geocoder "<restaurant_address>"
 - [ ] Menus
 - [ ] News
 - [ ] Recipes?  Perhaps from the restaurants?
-- [ ] 
-- [ ] 
 - [ ] 
 - [ ] 
 - [ ] 
