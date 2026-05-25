@@ -51,6 +51,7 @@ geocoder "<restaurant_address>"
 - [ ] Business cards
 - [ ] Site page content/stats
 - [ ] Newsletter
+  - [ ] https://buttondown.com/
   - [ ] Newsletter sign-up in sidebar
   - [ ] Delete About menu item
 - [ ] Home Page: Top 10 popular posts listing
