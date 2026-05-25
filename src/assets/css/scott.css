@@ -8,3 +8,8 @@
   position: relative;
   top: -1px;
 }
+
+/* controls widths of the site's input fields */
+section.contact, .newsletter, .search {
+  width: min(600px, 100%)
+}
