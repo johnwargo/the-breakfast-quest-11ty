@@ -5,10 +5,17 @@ eleventyNavigation:
   key: FAQ
   order: 2
   parent: About
+pagination:
+  data: faq-entries
+  size: 20
+  alias: faqs
 ---
 
-#### What's your favorite breakfast place?
-
-Surprisingly, we don't really have one. We have ones we go to frequently, but they're not our favorites, just the top choices in the area.
-
 <hr class="major" />
+{% for faq in faqs %}
+  <article>
+    <h4>{{ faq.question}}</h4>
+    <p>{{ faq.answer }}</p>
+    <hr class="major" />
+  </article>
+{% endfor %}
