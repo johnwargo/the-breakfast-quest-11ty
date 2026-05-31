@@ -6,6 +6,22 @@
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
 	// Placeholders with the same ids are connected.
 	// Example:
+	"Anchor Link": {
+		"scope": "markdown, liquid",
+		"prefix": "!link",
+		"body": [
+			"[](){target=\"_blank\"}"
+		],
+		"description": "Anchor Link with Target"
+	},
+	"Image": {
+		"scope": "markdown, liquid",
+		"prefix": "!img",
+		"body": [
+			"![](/images/2026/)"
+		],
+		"description": "Image Tag"
+	},
 	"location": {
 		"scope": "json",
 		"prefix": "location",
