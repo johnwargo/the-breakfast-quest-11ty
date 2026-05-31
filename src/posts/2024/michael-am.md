@@ -1,11 +1,11 @@
 ---
 title: Michael's AM
 description: 
-date: 2025-01-02
-timestamp: 2025-01-02T12:00:50.976Z
+date: 2024-01-02
+timestamp: 2024-01-02T12:00:50.976Z
 author: John
 isLocation: true
-visitDate: 2025-01-02
+visitDate: 2024-01-02
 rating: 
 website: https://michaelsam.net/
 menu: https://michaelsam.net/menu/
