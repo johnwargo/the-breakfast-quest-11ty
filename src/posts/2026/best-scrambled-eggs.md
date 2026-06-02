@@ -1,9 +1,6 @@
 ---
 title: Cooking The Best Scrambled Eggs
-description: I’d summarize this article as a playful, meat-heavy stream of food
-  terms that reads more like a humorous collage than a traditional piece. It
-  repeatedly lists different cuts and preparations of meat, creating a chaotic
-  but consistent theme centered on barbecue, deli meats, and assorted proteins.
+description: 
 date: 2026-05-02
 timestamp: 2026-05-02T18:02:50.976Z
 categories:

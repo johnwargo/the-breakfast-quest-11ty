@@ -22,12 +22,12 @@ I This particular restaurant was fairly large and kinda quirky. We arrived early
 
 Looking at the menu, you can see their view of breakfast and how seriously they take it:
 
-![A photo of part of the menu](/images/2026/bbb-1.jpg)
+![A photo of part of the menu](/images/2026/bbb-01.jpg)
 
 I don't remember the details of this, but one of their menu items was made with "ham dust" which I think was some sort of special seasoning. 
 
 They didn't offer country fried steak, so I had the standard breakfast (eggs, biscuit, sausage link, and fried potato wedge).  The biscuit was fairly dry and the sausage was split down the middle and grilled. They could have done a better job of presenting it (cutting through the skin before bringing it to the table, for example). The potato wedge was supposed to be their take on the McDonald's hash brown, but it really fell short. It was too thick and I didn't like the taste.
 
-![A photo of my meal](/images/2026/bbb-2.jpg)
+![A photo of my meal](/images/2026/bbb-02.jpg)
 
 My view is they're trying to be fun and cheeky, but they should spend more effort on delivering better food.
