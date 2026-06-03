@@ -7,6 +7,7 @@ isLocation: true
 visitDate: 
 rating: 
 website: https://tacobilly.com/
+menu: https://tacobilly.com/menu
 address: 201 Haywood Rd, Asheville, NC 28806
 city: Asheville
 state: North Carolina

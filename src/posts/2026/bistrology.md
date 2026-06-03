@@ -3,6 +3,7 @@ title: Bistrology
 description: 
 date: 2026-04-12
 timestamp: 2026-04-11T15:00:49.074Z
+author: John
 isLocation: true
 visitDate: 2026-04-11
 website: https://www.bistrology.restaurant/miramarbeach
@@ -36,4 +37,6 @@ The do make very interesting drinks, and the person making them was right up fro
 
 ![Bistrology's fancy coffee bubble](/images/2026/bistrology-04.jpg)
 
-Our food was mediocre, I would never go back.  We don't want an experience, we just want a simple, but good, breakfast. 
+Our food was mediocre and I would never go back. it was expensive too. Anna ordered the garlic parmesan potatoes and when they arrived they had neither garlic nor parmesan.  
+
+We don't want an experience, we just want a simple, good, tasty breakfast. This wasn't it. 
