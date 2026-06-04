@@ -1,8 +1,6 @@
 ---
 title: Jakey Leigh's Coffee Shop
-description: I’m reading a short, meat-heavy passage that lists a variety of
-  cuts and types of sausage, beef, pork, and chicken. It mainly feels like a
-  playful catalog of meats rather than a narrative or argument.
+description: A small café, coffee shop, and bakery with a few tables, fast service, and hand made breakfast sandwiches.
 date: 2026-04-30
 timestamp: 2026-04-30T23:29:15.589Z
 isLocation: true
@@ -18,4 +16,10 @@ categories: null
 generatedDescription: true
 ---
 
-Rump salami capicola chislic. Kielbasa pastrami sausage, jerky bacon flank brisket capicola rump t-bone sirloin landjaeger short loin. Frankfurter cow alcatra porchetta. Short ribs pig rump picanha drumstick, boudin pastrami chicken. Tri-tip chicken shank salami prosciutto pancetta cow. Brisket pork loin alcatra, burgdoggen prosciutto beef pancetta sirloin boudin ground round ham hock filet mignon.
+Anna and I were in Kanab hiking a slot canyon and wanted to grab breakfast before we started our hike. The breakfast place across the street from our motel was closed, so we looked for another option nearby and found Jakey's. Their Facebook page bills them as a Cafe, Coffee Shop, and Bakery and that's exactly what it is. 
+
+Nestled on a street corner in Kanab, its a small place with just a few small tables. The line to order was almost to the door, but that doesn't mean much considering how small the restaurant is. We quickly moved through the line, made our order, and had our food in just a few minutes.
+
+You can get coffee, no surprise there, some baked items including bagels and breakfast sandwiches. We each got coffee (its cold there in the early morning in April) and a breakfast sandwich.
+
+The breakfast sandwiches were carefully hand made, not thrown together in a batch. I really enjoyed mine.

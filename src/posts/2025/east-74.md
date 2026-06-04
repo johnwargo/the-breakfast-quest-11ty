@@ -1,12 +1,13 @@
 ---
 title: East 74 Family Restaurant
-description: 
+description: >-
+  I like East 74 Family Restaurant because it’s a reliable, comfortable spot for simple breakfast food. The restaurant has a steady mix of regulars, police officers, workers, and other locals, and it has a welcoming, neighborhood feel. The food is consistently good and reasonably priced, with my go-to being the country fried steak.  Overall, it’s a dependable breakfast place that I keep coming back to.
 date: 2025-05-01
 timestamp: 2025-01-05T17:26:38.617Z
 author: John
 isLocation: true
 visitDate: 2025-05-01
-rating: 
+rating: null
 website: https://east74restaurant.com/
 menu: https://east74restaurant.com/menu/
 address: 10915 Monroe Rd, Matthews, NC 28105
@@ -14,7 +15,8 @@ city: Charlotte
 state: North Carolina
 latitude: 35.1256891
 longitude: -80.72928069999999
-categories: 
+categories: null
+generatedDescription: true
 ---
 
 East 74 Family Restaurant is a great place for simple, comfort food breakfast. It is my local go to place for early morning fare; I discovered the restaurant a few years ago and if you pop in (very) early most any Saturday you'll find me in a booth (never a table) having breakfast.

@@ -1,6 +1,6 @@
 ---
 title: Carolina's Diner
-description: 
+description: A traditional diner serving comfort food.
 date: 2026-05-09
 timestamp: 2026-05-09T15:05:33.445Z
 author: John
@@ -15,6 +15,7 @@ state: North Carolina
 latitude: 36.0888207
 longitude: -79.8853606
 categories: 
+  - Diner
 ---
 
 Carolina's diner is a traditional diner, our kind of place. I went early in the morning, so they had a small staff and very few customers. I was immediately greeted and seated as soon as I entered the restaurant.

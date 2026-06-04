@@ -1,6 +1,6 @@
 ---
 title: Big Bad Breakfast
-description: A quirky chain of breakfast joints with cocktails and dishes made with 'ham powder'.
+description: A quirky chain of breakfast joints with cocktails, dishes made with 'ham powder', and mediocre food.
 date: 2026-04-12
 timestamp: 2026-04-12T15:00:59.347Z
 author: John

@@ -1,6 +1,6 @@
 ---
 title: Golden Diner
-description: 
+description: Comfy, cozy breakfast in Golden Colorado. I loved the food and the service.
 date: 2024-09-13
 timestamp: 2024-09-13T14:36:16.149Z
 author: John

@@ -1,6 +1,6 @@
 ---
 title: The Butcher & The Baker
-description: 
+description: My go to breakfast place in Telluride, a coffee shop with simple breakfast items and baked goods.
 date: 2024-09-13
 timestamp: 2024-09-13T22:40:00.568Z
 author: John

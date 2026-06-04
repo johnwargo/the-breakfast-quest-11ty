@@ -1,6 +1,6 @@
 ---
 title: Bistrology
-description: 
+description: A fancy breakfast place that just tries too hard. great presentation but Mediocre food.
 date: 2026-04-12
 timestamp: 2026-04-11T15:00:49.074Z
 author: John

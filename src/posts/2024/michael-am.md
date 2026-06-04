@@ -1,6 +1,6 @@
 ---
 title: Michael's AM
-description: 
+description: My go to breakfast place in my home town. This is probably where I was introduced to Country Fried Steak.
 date: 2024-01-02
 timestamp: 2024-01-02T12:00:50.976Z
 author: John

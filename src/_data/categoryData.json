@@ -16,8 +16,16 @@
     "imageAttribution": ""
   },
   {
+    "category": "Diner",
+    "count": 3,
+    "description": "",
+    "imageFilePath": "",
+    "imageAltText": "",
+    "imageAttribution": ""
+  },
+  {
     "category": "Uncategorized",
-    "count": 14,
+    "count": 11,
     "description": "Posts without an assigned category.",
     "imageFilePath": "",
     "imageAltText": "",

@@ -1,6 +1,6 @@
 ---
 title: Silver Skillet
-description: 
+description: An old diner with lots of room, great service and excellent food.
 date: 2025-10-10
 timestamp: 2025-10-10T15:00:50.976Z
 author: John
@@ -14,7 +14,8 @@ city: Atlanta
 state: Georgia
 latitude: 33.7870104
 longitude: -84.3834929
-categories: 
+categories:
+  - Diner
 ---
 
 We were in Atlanta to see a concert (Stephen Wilson) and the next morning went looking for a place to have breakfast. We were staying with friends and they recommended the Silver Skillet. 

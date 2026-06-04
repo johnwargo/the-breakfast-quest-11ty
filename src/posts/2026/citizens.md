@@ -1,6 +1,6 @@
 ---
 title: Citizen's Kitchen & Bar
-description: 
+description: An excellent breakfast place at the Mandalay Bay hotel in Las Vegas
 date: 2026-04-30
 timestamp: 2026-04-30T23:31:54.045Z
 author: John
