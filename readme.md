@@ -37,10 +37,11 @@ geocoder "<restaurant_address>"
 - [x] About page content
 - [x] Post allow multiple visit dates
 - [x] Application icon
-- [ ] FAQ
-  - [ ] from JSON Data file
-  - [ ] Pagination
-- [ ] Contact form
+- [x] FAQ
+  - [x] from JSON Data file
+  - [x] Pagination
+- [ ] Image Gallery
+- [ ] Contact form submission to...where?
 - [ ] Higher resolution breakfast plate image
 - [ ] 
 - [ ] 
@@ -59,15 +60,12 @@ geocoder "<restaurant_address>"
 - [ ] Site page content/stats
 - [ ] Rating
 - [ ] Locations page: Make PWA and cache locations data locally
-- [ ] 
+- [ ] Display author on page
 - [ ] 
 - [ ] 
 
 ## Scott Tasks
 
-- [ ] Search page
-  - [ ] Put button at the end of the input field
-- [ ] Style FAQ Q and A
 - [ ] 
 - [ ] 
 - [ ] 
