@@ -30,6 +30,10 @@ geocoder "<restaurant_address>"
 
 `idxIgnore: true` keeps a page out of the index
 
+## Contact Form
+
+https://app.web3forms.com/dashboard
+
 ## Tasks
 
 - [x] All pages (not only posts) content in the index
@@ -40,8 +44,7 @@ geocoder "<restaurant_address>"
 - [x] FAQ
   - [x] from JSON Data file
   - [x] Pagination
-- [ ] Image Gallery
-- [ ] Contact form submission to...where?
+- [X] Contact form submission to...where?
 - [ ] Higher resolution breakfast plate image
 - [ ] 
 - [ ] 
@@ -50,6 +53,7 @@ geocoder "<restaurant_address>"
 ## Post Launch
 
 - [ ] Business cards
+- [ ] Image Gallery
 - [ ] Newsletter
   - [ ] https://buttondown.com/
   - [ ] Newsletter sign-up in sidebar
