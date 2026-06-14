@@ -58,22 +58,33 @@ export default async function (eleventyConfig) {
 		imageClass: 'image fit'
 	});
 
+	const getSortDate = (item, dateProps = ['visitDate', 'timestamp', 'date']) => {
+		for (const prop of dateProps) {
+			let value;
+			if (prop === 'date') {
+				value = item.date;
+			} else {
+				value = item?.data?.[prop];
+			}
+			if (!value) continue;
+
+			const resolvedDate = new Date(value);
+			if (!Number.isNaN(resolvedDate.getTime())) return resolvedDate;
+		}
+		return null;
+	};
+
 	eleventyConfig.addCollection('articlesByTimestamp', collectionAPI => {
-		return collectionAPI.getFilteredByTag('post').sort((a, b) => {
-			// use the timestamp if we have it, otherwise date
-			var aDate = a.data.timestamp ? new Date(a.data.timestamp) : new Date(a.date);
-			var bDate = b.data.timestamp ? new Date(b.data.timestamp) : new Date(b.date);
-			return aDate - bDate;
-		});
+		return collectionAPI.getFilteredByTag('post')
+			.filter(post => getSortDate(post))
+			.sort((a, b) => getSortDate(a) - getSortDate(b));
 	});
 
 	eleventyConfig.addCollection('reviewsByTimestamp', collectionAPI => {
-		return collectionAPI.getFilteredByTag('post').filter(post => post.data.isLocation)
-			.sort((a, b) => {
-				var aDate = a.data.timestamp ? new Date(a.data.timestamp) : new Date(a.date);
-				var bDate = b.data.timestamp ? new Date(b.data.timestamp) : new Date(b.date);
-				return aDate - bDate;
-			});
+		return collectionAPI.getFilteredByTag('post')
+			.filter(post => post.data.isLocation)
+			.filter(post => getSortDate(post))
+			.sort((a, b) => getSortDate(a) - getSortDate(b));
 	});
 
 	eleventyConfig.addCollection('reviewsByName', collectionAPI => {

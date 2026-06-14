@@ -2,8 +2,8 @@
 layout: base
 ---
 
-{% assign previousPost = collections.post | getPreviousCollectionItem %}
-{% assign nextPost = collections.post | getNextCollectionItem %}
+{% assign previousPost = collections.articlesByTimestamp | getPreviousCollectionItem %}
+{% assign nextPost = collections.articlesByTimestamp | getNextCollectionItem %}
 
 <section>
   <article>

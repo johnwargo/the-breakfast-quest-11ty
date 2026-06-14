@@ -36,18 +36,8 @@ https://app.web3forms.com/dashboard
 
 ## Tasks
 
-- [x] All pages (not only posts) content in the index
-- [x] Home Page content
-- [x] About page content
-- [x] Post allow multiple visit dates
-- [x] Application icon
-- [x] FAQ
-  - [x] from JSON Data file
-  - [x] Pagination
-- [X] Contact form submission to...where?
-- [ ] Articles by Visit Date (with empty checking) for Pagination
-- [ ] Reviews by Visit Date (with empty checking) for Pagination
 - [ ] Higher resolution breakfast plate image
+- [ ] 
 - [ ] 
 - [ ] 
 - [ ] 
@@ -67,6 +57,8 @@ https://app.web3forms.com/dashboard
 - [ ] Rating
 - [ ] Locations page: Make PWA and cache locations data locally
 - [ ] Display author on page
+- [ ] YouTube channel
+- [ ] 
 - [ ] 
 - [ ] 
 
