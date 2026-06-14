@@ -10,6 +10,6 @@ excludeFromSearch: true
 
 I built this site using a static site generator formerly called [11ty](https://www.11ty.dev/){target="_blank"} (Eleventy); its now called **Build Awesome** but I'm not sure I'll ever use that name.
 
-I host the site on [Netlify](https://www.netlify.com/){target="_blank"}; I love them, its so easy to host your app there plus its free for non-business use cases.
+The site's styling comes from the [Editorial](https://pixelarity.com/editorial){target="_blank"} template from [Pixelarity](https://pixelarity.com/){target="_blank"}.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d2459447-19e0-4037-8fd1-12cbbf173fa0/deploy-status)](https://app.netlify.com/projects/breakfastquest/deploys)
+I host the site on [Netlify](https://www.netlify.com/){target="_blank"}; I love them, its so easy to host your app there plus its free for non-business use cases.
