@@ -9,19 +9,24 @@
   {%- if post.data.city and post.data.state %}
     <strong>Location:</strong> {{ post.data.city }}, {{ post.data.state }}<br />
   {%- endif %}
+  {%- if post.data.isLocation %}
+    {%- if post.data.visitDate %}
+      <strong>Visited:</strong> {{ post.data.visitDate | readableDate }} |
+    {%- endif %}
+  {%- endif %}
   <strong>Posted:</strong>&nbsp;
   {%- if post.data.timestamp %}
     {{ post.data.timestamp | readableTimestamp }}
   {%- else %}
     {{ post.date | readableDate }}
-  {%- endif %}
-  {%- if post.data.categories.length > 0 %}
-    <br />
+  {%- endif %}  
+  <br />
+  {%- if post.data.categories.length > 0 %}    
     <strong>Found in</strong>{% for cat in post.data.categories %}
     <a href="/categories/{{ cat | slugify }}">{{ cat }}</a>
     {%- unless forloop.last %},{% endunless %}{%- endfor %}.
+    <br />
   {% endif %}
-  <br />
-  {% if post.data.description %}{{ post.data.description }}{% endif %}
+  {% if post.data.description %}<br />{{ post.data.description }}{% endif %}
 </article>
 <hr class="major" />

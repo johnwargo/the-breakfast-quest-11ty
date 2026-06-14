@@ -45,6 +45,8 @@ https://app.web3forms.com/dashboard
   - [x] from JSON Data file
   - [x] Pagination
 - [X] Contact form submission to...where?
+- [ ] Articles by Visit Date (with empty checking) for Pagination
+- [ ] Reviews by Visit Date (with empty checking) for Pagination
 - [ ] Higher resolution breakfast plate image
 - [ ] 
 - [ ] 
