@@ -1,5 +1,8 @@
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
+import embedYouTube from 'eleventy-plugin-youtube-embed';
+import markdownIt from 'markdown-it';
+import markdownItAttrs from 'markdown-it-attrs';
 import pluginDate from 'eleventy-plugin-date';
 import pluginRss from '@11ty/eleventy-plugin-rss';
 // My plugins
@@ -37,6 +40,18 @@ export default async function (eleventyConfig) {
 			class: 'image fit"'
 		}
 	});
+
+	// https://github.com/11ty/eleventy/issues/2301
+	const mdOptions = {
+		html: true,
+		breaks: true,
+		linkify: true,
+	};
+	const markdownLib = markdownIt(mdOptions)
+		.use(markdownItAttrs)
+		.disable('code');
+
+	eleventyConfig.setLibrary('md', markdownLib);
 
 	eleventyConfig.addPlugin(pluginImageHeaders, {
 		dataFileName: categoryDataFile,
