@@ -20,10 +20,26 @@ section.contact,
   padding-top: 2em;
 }
 
+/* The following are two ways to control image width */
 #main>.inner>section>article>p>picture img {
   width: 100%;
   height: auto;
+  max-width: 60rem;
 }
+
+/* article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  max-width: 60rem;
+} */
 
 #sidebar>.inner>.alt {
   margin-bottom: 1.8rem;
