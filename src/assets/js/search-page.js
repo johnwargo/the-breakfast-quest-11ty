@@ -16,18 +16,22 @@ async function doSearch(evt) {
 		console.dir(hits);
 
 		const results = document.querySelector("#searchResults");
-		results.innerHTML = hits
-			.map((hit) => {
-				var res = '<article><h4>';
-				res += `<a href="${hit.url}" style="cursor: pointer">${hit.title || hit.name || hit.objectID}</a>`;
-				res += '</h4>';
-				res += `<strong>Posted:</strong>&nbsp;${hit.date}</br />`;
-				// TODO: Loop through categories
-				res += `${hit.content}<br />`;
-				res += '</article><hr class="major" />';
-				return res;
-			})
-			.join("");
+		if (hits.length > 0) {
+			results.innerHTML = hits
+				.map((hit) => {
+					var res = '<article><h4>';
+					res += `<a href="${hit.url}" style="cursor: pointer">${hit.title || hit.name || hit.objectID}</a>`;
+					res += '</h4>';
+					res += `<strong>Posted:</strong>&nbsp;${hit.date}</br />`;
+					// TODO: Loop through categories
+					res += `${hit.content}<br />`;
+					res += '</article><hr class="major" />';
+					return res;
+				})
+				.join("");
+		} else {
+			results.innerHTML = `<p>No results found for "${query}".</p>`;
+		}
 	}
 };
 
