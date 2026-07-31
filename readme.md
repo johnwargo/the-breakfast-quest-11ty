@@ -36,8 +36,8 @@ https://app.web3forms.com/dashboard
 
 ## Tasks
 
+- [ ] Not found page image
 - [ ] Higher resolution breakfast plate image
-- [ ] 
 - [ ] 
 - [ ] 
 - [ ] 

@@ -19,7 +19,7 @@
 		"prefix": "!gallery",
 		"body": [
 			"{% gallery \"\" %}",
-			"{% galleryImage \"src/images/\", \"\" %}",
+				"{% galleryImage \"src/images/2026/\", \"\" %}",
 			"{% endgallery %}"
 		],
 		"description": "Image Gallery"
