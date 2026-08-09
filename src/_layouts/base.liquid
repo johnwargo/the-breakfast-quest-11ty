@@ -11,14 +11,18 @@ siteTitle: The Breakfast Quest
 <html>
 
 <head>
-	<title>{{ title }}: {{ siteTitle }}</title>
+	{% if page.url == '/' %}
+	<title>{{ siteTitle }}</title>
+	{% else %}
+	<title>{{ title }} | {{ siteTitle }}</title>
+	{% endif %}
 	{%- include "metadata.html" -%}
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="/assets/css/main.css" />
 	<link rel="stylesheet" href="/assets/css/scott.css" />
-	{%- if page.url startswith '/posts'  %}
-    <link rel="stylesheet" href="/assets/css/photoswipe.css">
-  {%- endif %}
+	{%- if page.url startswith '/posts' %}
+	<link rel="stylesheet" href="/assets/css/photoswipe.css">
+	{%- endif %}
 	<!-- Icons -->
 	{%- include 'icons.html' -%}
 	<!-- Google Analytics -->
@@ -33,7 +37,7 @@ siteTitle: The Breakfast Quest
 				{{ content }}
 			</div>
 		</div>
-		{%- include "sidebar.html" -%}		
+		{%- include "sidebar.html" -%}
 	</div>
 	{%- include "pagescripts.html" -%}
 </body>
