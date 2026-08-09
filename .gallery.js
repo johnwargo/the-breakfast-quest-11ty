@@ -45,15 +45,16 @@ async function galleryImageShortcode(src, alt) {
 
 function galleryShortcode(content, name) {
     console.log(`[${PLUGIN_NAME}] "${name}"`);
+    var galleryID = `gallery-${name.replace(/\s+/g, '-').toLowerCase()}`;
     return `<div>
-        <div class="pswp-gallery" id="gallery-${name}">
+        <div class="pswp-gallery" id="${galleryID}">
             ${content}
         </div>
         <script type="module">
             import PhotoSwipeLightbox from '/assets/js/photoswipe-lightbox.esm.min.js';
             import PhotoSwipe from '/assets/js/photoswipe.esm.min.js';
             const lightbox = new PhotoSwipeLightbox({
-                gallery: '#gallery-${name}',
+                gallery: '#${galleryID}',
                 children: 'a',
                 showHideAnimationType: 'zoom',
                 pswpModule: PhotoSwipe

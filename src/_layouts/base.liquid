@@ -12,27 +12,30 @@ siteTitle: The Breakfast Quest
 
 <head>
 	<title>{{ title }}: {{ siteTitle }}</title>
-	{% include "metadata.html" %}
+	{%- include "metadata.html" -%}
+	<!-- Stylesheets -->
 	<link rel="stylesheet" href="/assets/css/main.css" />
 	<link rel="stylesheet" href="/assets/css/scott.css" />
-	{% if page.url startswith '/posts'  %}
+	{%- if page.url startswith '/posts'  %}
     <link rel="stylesheet" href="/assets/css/photoswipe.css">
-  {% endif %}
-	{% include 'icons.html' %}
-	{% include "google-analytics.html" %}
+  {%- endif %}
+	<!-- Icons -->
+	{%- include 'icons.html' -%}
+	<!-- Google Analytics -->
+	{%- include "google-analytics.html" -%}
 </head>
 
 <body class="is-preload">
 	<div id="wrapper">
 		<div id="main">
 			<div class="inner">
-				{% include "header.html" %}
+				{%- include "header.html" -%}
 				{{ content }}
 			</div>
 		</div>
-		{% include "sidebar.html" %}		
+		{%- include "sidebar.html" -%}		
 	</div>
-	{% include "pagescripts.html" %}
+	{%- include "pagescripts.html" -%}
 </body>
 
 </html>
