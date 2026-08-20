@@ -5,7 +5,7 @@
     "data": "collections.articlesByTimestamp",
     "size": 20,
     "alias": "posts",
-    "before": function(paginationData, fullData){ let data = paginationData.filter((item) => !item.data.categories || item.data.categories.length == 0); return Array.from(data).sort((a, b) => { return a.date < b.date ? 1 : -1; });}
+    "before": function(paginationData, fullData){ let data = paginationData.filter((item) => !item.data.categories || item.data.categories.length == 0); return data.sort((a, b) => new Date(b.date) - new Date(a.date));}
   },
   "category": "Uncategorized",
   "description": "Posts without an assigned category.",
