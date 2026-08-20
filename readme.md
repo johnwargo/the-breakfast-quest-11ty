@@ -36,23 +36,17 @@ https://app.web3forms.com/dashboard
 
 ## Tasks
 
+- [x] Image Gallery
 - [ ] Not found page image
+- [ ] Reviews by state or city?
+- [ ] Write number of locations to a data file
+- [ ] Most popular articles page
 - [ ] Higher resolution breakfast plate image
-- [ ] 
-- [ ] 
-- [ ] 
-
-## Post Launch
-
-- [ ] Business cards
-- [ ] Image Gallery
 - [ ] Newsletter
   - [ ] https://buttondown.com/
   - [ ] Newsletter sign-up in sidebar
   - [ ] Delete About menu item
-- [ ] Reviews by state or city?
 - [ ] Home Page: Top 10 popular posts listing
-- [ ] Most popular articles page
 - [ ] Site page content/stats
 - [ ] Rating
 - [ ] Locations page: Make PWA and cache locations data locally
