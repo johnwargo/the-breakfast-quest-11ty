@@ -1,12 +1,10 @@
-![Site home page](images/home-page-short.png)
-
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d2459447-19e0-4037-8fd1-12cbbf173fa0/deploy-status)](https://app.netlify.com/projects/breakfastquest/deploys)
 
-> [!WARNING]
-> Work in progress; this site may be publicly available, but it's not ready for prime time yet.
-
 Netlify project: [https://breakfastquest.netlify.app/](https://breakfastquest.netlify.app/).
+
 Pixelarity Template: [Editorial](https://pixelarity.com/editorial)
+
+![Site home page](images/home-page-short.png)
 
 ## Map
 
