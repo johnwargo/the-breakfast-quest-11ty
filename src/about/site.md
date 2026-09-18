@@ -5,7 +5,7 @@ eleventyNavigation:
   key: Site Info
   order: 3
   parent: About
-excludeFromSearch: true
+idxIgnore: true
 ---
 
 I built this site using a static site generator formerly called [11ty](https://www.11ty.dev/){target="_blank"} (Eleventy); its now called **Build Awesome** but I'm not sure I'll ever use that name.
