@@ -12,8 +12,8 @@ menu: https://www.the5pointcafe.com/main-menu
 address: 415 Cedar Street, Seattle, WA 98121
 city: Seattle
 state: Washington
-latitude: 
-longitude: 
+latitude: 47.6180763
+longitude: -122.3473763
 categories: 
 ---
 
