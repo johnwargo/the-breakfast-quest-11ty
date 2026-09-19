@@ -5,10 +5,12 @@ import htmlmin from 'html-minifier';
 export default function (value, outputPath) {
   if (outputPath && outputPath.indexOf('.html') > -1) {
     return htmlmin.minify(value, {
-      useShortDoctype: true,
-      removeComments: true,
       collapseWhitespace: true,
-      minifyCSS: true
+      maxLineLength: 120,
+      minifyCSS: true,
+      minifyJS: true,
+      removeComments: true,
+      useShortDoctype: true
     });
   }
   return value;
